@@ -1,7 +1,8 @@
 body {
 	font-family: "Untitled Sans", sans-serif;
 	font-size: 1rem;
-	line-height: 1.48;
+	font-weight: 400;
+	line-height: 1.36;
 	color: #3B4338;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -12,44 +13,36 @@ body {
 	::selection { background: rgba(77,129,119,0.1); }
 	::-moz-selection { background: rgba(77,129,119,0.1); }
 
-header {
-	font-size: 0.9rem;
-	font-weight: 400;
-}
-
-h2 {
-	font-size: 0.72rem;
-	font-family: "Maison Neue Mono", monospace;
-	font-weight: 400;
-	letter-spacing: 0px;
-	padding-top: 60px;
-}
-
 #wrap {
 	width: 80%;
 	max-width: 1800px;
 	margin: 60px auto;
 }
 
-.leftcol {
-	/* width: 48%; */
-	width: 650px;
-	max-width: 900px;
-	float: left;
-}
-
-.rightcol {
-	width: 44%;
-	max-width: 900px;
-	float: right;
+#header {
+	font-size: 1.2rem;
+	width: 100%;
+	margin-bottom: 180px;
 }
 
 #about {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	letter-spacing: -0.5px;
-	line-height: 1.4;
-	font-weight: 400;
 }
+
+.leftcol {
+	/* width: 48%; */
+	width: 600px;
+	max-width: 900px;
+	/*float: left;*/
+}
+
+.rightcol {
+	width: 620px;
+	/*max-width: 600px;*/
+	float: left;
+}
+
 
 a {
 	color: inherit;
@@ -87,23 +80,6 @@ a:hover {
 		color: #4D4B98;
 	}
 
-
-
-/*img{
-    display: none;
-    width: 400px;
-    z-index: -10;
-    position: absolute;
-    top: 300px;
-    left: 400px;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    opacity: 0;
-}
-
-span:hover + img{
-    display: block;
-}*/
 
 .img_box { width: 100%; }
 
@@ -159,6 +135,12 @@ a.right-arrow {cursor: ne-resize;}
 		width: 92%;
 		margin-top: 10px;
 	}
+
+
+	#header {
+		width: 100%;
+		margin-bottom: 100px;
+}
 
    	.leftcol {
 		width: 100%; 
@@ -256,35 +238,5 @@ a.right-arrow {cursor: ne-resize;}
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+000D-F8FF;
-}
-
-
-
-
-/* WIP, FOR MICROSITE */
-
-#books-leftcol {
-	width: 20%;
-	float: left;
-	position: fixed;
-}
-
-#books-rightcol {
-	width: 80%;
-	float: right;
-}
-	#books-rightcol img {
-		width: 100%;
-		padding-bottom: 20px;
-	}
-
-ul {
-	list-style-type: none;
-	padding-left: 0;
-	color: #939593;
-}
-
-li .active {
-	color: #3B4338;
 }
 
