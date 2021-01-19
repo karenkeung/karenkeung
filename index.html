@@ -1,5 +1,77 @@
-<html>
-	<body>
-		Testing
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Designing at Facebook. Graduate of the York/Sheridan Program in Design." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>Karen Keung</title>
+
+	<meta property="og:title" content="Karen Keung"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://karenkeung.com"/>
+	<meta property="og:image" content="http://karenkeung.com/assets/og-cover.png"/>
+	<meta property="omg:image:width" content="1200">
+	<meta property="omg:image:height" content="630">
+	<meta property="og:description" content="Designer at Facebook. Graduate of the York/Sheridan Program in Design." />
+
+	<link rel="shortcut icon" type="image/ico" href="favicon.png"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div id="wrap">
+
+	<section id="about">
+		<div class="leftcol">
+
+			<h2>Karen Keung</h2>
+				<p> I’ve been a product designer at Facebook since 2017. I currently work on products and infrastructure that are shared across the family of apps. I’ve also worked on growth, personalized learning tools, and messaging.</p>
+
+				<p> I studied at the <a href="https://en.wikipedia.org/wiki/York/Sheridan_Design">York/Sheridan Program in Design</a>, where I got to explore ideas like <a href="https://making-room.smvi.co/" target="_blank">liminality’s affect on home</a> and ways to make <a href="http://sesame.smvi.co/" target="_blank">academic reading</a> feel more native to screens. Some of my <a href="http://designobserver.com/feature/slow-dont-stop/39589" target="_blank">writing</a> also got published (which I never thought would happen). </p>
+				
+				<p> Please feel free to <a href="mailto:work.karenkeung@gmail.com" class="contact">say hi</a>!</p>
+			</p>
+		</div>
+
+
+	</section>
+</div>
+
+<!-- <div id="fade" class="day"></div> -->
+
+</body>
+
+<script type="text/javascript">
+	var currentTime = new Date().getHours();
+	if (8 <= currentTime && currentTime < 17) {
+        document.getElementById("fade").className = "day";
+	}
+
+	else if ((17 <= currentTime && currentTime < 21)||(5 <= currentTime && currentTime < 8)) {
+		document.body.style.backgroundColor="#F2F3F6";
+        document.body.style.color = "#595C69";
+        document.getElementById("fade").className = "dusk";
+	}
+
+	else {
+		document.body.style.backgroundColor="#252922";
+        document.body.style.color = "#ECE9EE";
+        document.getElementById("fade").className = "night";
+	}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50110826-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

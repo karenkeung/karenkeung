@@ -1,0 +1,290 @@
+body {
+	font-family: "Untitled Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 1.48;
+	color: #3B4338;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #fdfdfd;
+	margin: 0px;
+	overscroll-behavior: none;
+}
+	::selection { background: rgba(77,129,119,0.1); }
+	::-moz-selection { background: rgba(77,129,119,0.1); }
+
+header {
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 0.72rem;
+	font-family: "Maison Neue Mono", monospace;
+	font-weight: 400;
+	letter-spacing: 0px;
+	padding-top: 60px;
+}
+
+#wrap {
+	width: 80%;
+	max-width: 1800px;
+	margin: 60px auto;
+}
+
+.leftcol {
+	/* width: 48%; */
+	width: 650px;
+	max-width: 900px;
+	float: left;
+}
+
+.rightcol {
+	width: 44%;
+	max-width: 900px;
+	float: right;
+}
+
+#about {
+	font-size: 1.5rem;
+	letter-spacing: -0.5px;
+	line-height: 1.4;
+	font-weight: 400;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	/*border-bottom: 1px dashed;*/
+	/*border-bottom-style: dashed;*/
+	cursor: e-resize;
+ 	transition: ease-out 0.2s;
+ 	-webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a:hover {
+	color: #5EBA78;
+}
+
+	a.ysdn:hover {
+		color: #E61031;
+	}
+
+	a.fb:hover {
+		color: #39579A;
+	}
+
+	a.msgr:hover {
+		color: #0080FF;
+	}
+
+	a.summit:hover {
+		color: #4D4B98;
+	}
+
+
+
+/*img{
+    display: none;
+    width: 400px;
+    z-index: -10;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    opacity: 0;
+}
+
+span:hover + img{
+    display: block;
+}*/
+
+.img_box { width: 100%; }
+
+a.right-arrow {cursor: ne-resize;}
+
+#fade {
+	width: 100%;
+	/* max-width: 1800px; */
+	height: 3%;
+ 	position: fixed;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.day {
+ 	background: #fdfdfd; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(rgba(238, 238, 238, 0), rgba(255, 239, 130, 0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(238, 238, 238, 0), rgba(255, 239, 130, 0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(238, 238, 238, 0), rgba(255, 239, 130, 0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(238, 238, 238, 0), rgba(255, 239, 130, 0.6)); /* Standard syntax */
+}
+
+.dusk {
+	background: #595C69; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(rgba(242, 243, 246, 0), rgba(248, 192, 192, 0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(242, 243, 246, 0), rgba(248, 192, 192, 0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(242, 243, 246, 0), rgba(248, 192, 192, 0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(242, 243, 246, 0), rgba(248, 192, 192, 0.6)); /* Standard syntax */
+}
+
+.night {
+ 	background: #252922; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(rgba(36, 41, 34, 0), rgba(255, 173, 131, 0.5)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(36, 41, 34, 0), rgba(255, 173, 131, 0.5)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(36, 41, 34, 0), rgba(255, 173, 131, 0.5)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(36, 41, 34, 0), rgba(255, 173, 131, 0.5)); /* Standard syntax */
+}
+
+.text-night {
+	color: #EEEAF0;
+}
+
+/* * * * * */
+/*
+@media screen and (max-width: 1300px) {
+	#about {
+		font-size: 2.3rem;
+	}
+} */
+
+@media screen and (max-width: 1000px) {
+	#wrap {
+		width: 92%;
+		margin-top: 10px;
+	}
+
+   	.leftcol {
+		width: 100%; 
+		/*float: left;*/
+	}
+
+}/*
+
+@media screen and (max-width: 720px) {
+
+	#about .leftcol {
+		width: 92%;
+	}
+
+	#fade {
+		height: 2%;
+	}
+
+	h2 {
+		padding-top: 32px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#wrap {
+		width: 92%;
+		margin: 10px auto;
+	}
+
+	#fade {
+		height: 2%;
+	}
+}
+*/
+/* letters */
+/* @font-face {
+    font-family:'Canela Web Thin';
+    src: url('../fonts/Canela Web Thin Regular.eot');
+	src: url('../fonts/Canela Web Thin Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Canela Web Thin Regular.woff2') format('woff2'),
+		url('../fonts/Canela Web Thin Regular.woff') format('woff'),
+		url('../fonts/Canela Web Thin Regular.svg#Canela Web Thin Regular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-201D;
+} */
+
+/* @font-face {
+    font-family:'Fakt Pro';
+    src: url('../fonts/FaktPro-Normal.eot');
+	src: url('../fonts/FaktPro-Normal.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FaktPro-Normal.woff2') format('woff2'),
+		url('../fonts/FaktPro-Normal.woff') format('woff'),
+		url('../fonts/FaktPro-Normal.svg#FaktPro-Normal') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-201D;
+}
+
+@font-face {
+    font-family:'Fakt Pro';
+    src: url('../fonts/FaktPro-Light.eot');
+	src: url('../fonts/FaktPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FaktPro-Light.woff2') format('woff2'),
+		url('../fonts/FaktPro-Light.woff') format('woff'),
+		url('../fonts/FaktPro-Light.svg#FaktPro-Blond') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-201D;
+} */
+
+
+@font-face {
+    font-family: 'Untitled Sans';
+    src: url('../fonts/UntitledSans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/UntitledSans-regular-webfont.woff') format('woff'),
+         url('../fonts/UntitledSans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/UntitledSans-regular-webfont.svg#untitled_sansregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family:'Maison Neue Mono';
+  src: url('../fonts/MaisonNeue-Mono.eot');
+  src: url('../fonts/MaisonNeue-Mono.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MaisonNeue-Mono.woff') format('woff'),
+    url('../fonts/MaisonNeue-Mono.ttf') format('truetype'),
+    url('../fonts/MaisonNeue-Mono.svg#MaisonNeue-Mono') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-F8FF;
+}
+
+
+
+
+/* WIP, FOR MICROSITE */
+
+#books-leftcol {
+	width: 20%;
+	float: left;
+	position: fixed;
+}
+
+#books-rightcol {
+	width: 80%;
+	float: right;
+}
+	#books-rightcol img {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	color: #939593;
+}
+
+li .active {
+	color: #3B4338;
+}
+
