@@ -1,0 +1,664 @@
+/* Setup */
+body {
+	margin: 0px;
+	font-size: 16px;
+	font-family: 'Neue Haas Unica Pro', serif;
+	background: #FAFAFA;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: block;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+}
+
+.wrap {
+	margin: 0px 58px;
+}
+
+/* HEADER */
+	header {
+		/*border-bottom: 1px solid rgba(0,0,0,0.1);*/
+		width: 100%;
+		height: 66px;
+		position: fixed;
+		top: 0;
+		background: #fafafa;
+		z-index: 10;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}	
+
+	header ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	header ul li {
+		display: inline-block;
+	}
+
+	.nav p {
+		font-family: 'Neue Haas Unica Pro', sans-serif;
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.home {
+		font-weight: 600;
+		margin-left: 0px;
+	}
+
+	.nav-back {		
+		margin-left: 0px;
+		color: #000;
+	}
+
+	.nav-back:before {
+		content: '←';
+		margin-left: -20px;
+		padding-right: 5px;
+	}
+
+	.nav-points {
+		margin-left: 1323px;
+		/*margin-left: calc(100% - 358px);*/
+	}
+		.adjust1 {
+			margin-left: 1304px;
+		}
+		.adjust2 {
+			margin-left: 1192px;
+		}	
+
+	.nav-points:before {
+		content: '';
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+		background-color: #FFCC43;
+		margin: -1px 6px 0px 0px;
+	}
+
+	.nav-profile {
+		margin-left: 10px;
+	}
+	.nav-profile:after {
+		content: url(img/chevron.svg);
+		position: absolute;
+		margin-left: 8px;
+		margin-top: -2px;
+	}
+
+#classrooms {
+	width: 63.5%;
+	min-width: 600px;
+	position: relative;
+	top: 100px;
+	left: 0px;
+}
+
+#updates {
+	width: 32%;
+	min-width: 480px;
+	position: absolute;
+	top: 100px;
+	left: 64%;
+}
+
+#recent, #discussion {
+	width: 32%;
+	min-width: 480px;
+	position: absolute;
+	top: 516px;
+	left: 64%;
+}
+
+#explore {
+	width: 63.3%;
+	min-width: 600px;
+	height: 420px;
+	border-radius: 2px;
+	background-color: white;
+	border: 1px solid rgba(0,0,0,0.1);
+	position: relative;
+	/*top: 1864px;*/
+	top: 126px;
+	margin-bottom: 100px;
+}
+
+#discussion {
+	margin-bottom: 60px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 400; 
+}
+
+#classrooms h1 {
+	margin: 0;
+	margin-bottom: -20px;
+}
+
+#explore h1 {
+	padding: 0px 24px;
+}
+
+#explore a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.subjectCard {
+	width: 275px;
+	margin: 10px 0px 8px 15px;
+	height: 120px;
+	padding: 10px 12px;
+	background-color: rgba(221,232,238,0.7);
+	display: inline-block;
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0,0.1);
+	-transition: 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+}
+	.subjectCard:hover {
+		cursor: pointer;}
+
+	.humanities {
+		background-color: rgba(221,232,238,0.7);}
+	.humanities * {
+		color: rgba(75,109,127,1);}
+	.humanities:hover {
+		background-color: rgba(221,232,238,1.0);}
+
+	.language {
+		background-color: rgba(233,227,225,0.7);}
+	.language * {
+		color: rgba(135,111,99,1);}
+	.language:hover {
+		background-color: rgba(233,227,225,1);}
+
+	.art {
+		background-color: rgba(230,225,233,0.7); }
+	.art * {
+		color: rgba(126,114,132,1); }
+	.art:hover {
+		background-color: rgba(230,225,233,1); }
+
+	.mathematics {
+		background-color: rgba(236,238,221,0.7); }
+	.mathematics * {
+		color: rgba(126,130,102,1); }
+	.mathematics:hover {
+		background-color: rgba(236,238,221,1); }
+
+.subjectFirst {
+	margin-left: 24px;
+}
+
+.subjectCard * {
+	display: block;
+	text-align: left;
+	margin: 0px; /* Reset */
+}
+
+h5 {
+	font-size: 10px;
+	letter-spacing: 0.5px;
+	color: #4C6D7F;
+	opacity: 0.5;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: 400;
+	color: #4C6D7F;
+}
+
+p.rec {
+	opacity: 0.5;
+	margin-top: 40px;
+}
+
+/* TABLE */
+	table {
+		width: 100%;
+		text-align: left;
+		background-color: white;
+		border-collapse: separate;
+		border: 1px solid rgba(0,0,0,0.1);	
+	    border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-spacing: 0px;
+	}
+
+	tr {
+		-transition: 0.2s;
+		-webkit-transition: 0.2s;
+	}
+
+	th {
+		background-color: #fff;
+	}
+
+	td, th {
+		/*border-left: 1px solid rgba(0,0,0,0.1);*/
+	    border-top: 1px solid rgba(0,0,0,0.1);
+	}
+
+	th {
+		font-size: 22px;
+		font-weight: 400;
+		/*border-bottom: 1px solid rgba(0,0,0,0.05);*/
+		padding: 10px 24px;
+		border-top: none;
+	}
+
+	td.subject, td.module, td.discussion-item {
+		font-size: 18px;
+		padding: 12px 24px;
+		line-height: 1.2;
+		/*border-bottom: 1px solid rgba(0,0,0,0.1);*/
+	}
+
+	td:first-child, th:first-child {
+	    border-left: none; }
+
+	table tr:hover {
+		background-color: rgba(160,195,189,0.12);
+		/*background-color: rgba(175,208,152,0.1); */
+		cursor: pointer; }
+
+	th:hover {
+		background-color: #fff;
+		cursor: auto; }
+
+	.meta {
+		font-size: 14px;
+		color: #9B9B9B;
+	}
+
+	.td-right {
+		text-align: right;
+		float: right;
+	}
+
+	td a {
+		display: block; 
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.rowlink::before {
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  height: 1.5em;
+	}
+
+
+
+.status {
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	display: inline-block;
+	margin-top: 18px;
+}
+
+.st-complete {
+	background-color: #53BB8A; }
+.st-progress {
+	background-color: #FFCC43; }
+.st-late {
+	background-color: #FF6161; }
+.st-unread {
+	background-color: #9B9B9B; }
+
+.module-wrapper {
+	margin-left: 25px;
+	margin-top: -30px;
+}
+
+
+
+.discussion-post {
+	padding-left: 40px;
+	margin-top: -30px;
+}
+
+.user-av {
+	width: 28px;
+	height: 28px;
+	border-radius: 2px;
+	background-color: #eee;
+	display: inline-block;
+	margin: 5px 5px 0px 0px;
+}
+
+#alison {
+	background-color: #63B5E0;
+}
+
+#alison::after, #andy::after {
+	content:'AS';
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	position: absolute;
+	letter-spacing: 0.40px;
+	margin-left: 6px;
+	margin-top: 6px;
+	color: #fff;
+}
+
+#andy {
+	background-color: #E0A163;
+}
+
+#andy::after{
+	content:'AL';
+}
+
+.commentBody {
+	line-height: 1.4;
+	margin-top: 6px;
+	color: #9B9B9B;
+}
+
+
+.mention {
+	font-weight: 500;
+}
+
+
+
+.article-render {
+	display: inline-block;
+	margin: -5px 0px 10px 0px;
+	/*background: #eee;*/
+	border-radius: 2px;
+	padding: 10px 0px;
+	-transition: 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+}
+
+.article-render:hover {
+	background: rgba(71,159,255,0.05);
+}
+
+.article-indentLine {
+	width: 2px;
+	height: 84px;
+	position: absolute;
+	border-radius: 2px;
+	background: #aaa;
+	display: inline-block;
+	float: left;
+	margin-top: -10px;
+	-transition: 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+}
+
+.article-render:hover > .article-indentLine {
+	background: #479FFF;
+}
+
+.article-img {
+	width: 64px;
+	height: 64px;
+	border-radius: 2px;
+	background-image: url(img/article-thumb.png);
+	background-size: 100%;
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+}
+
+.article-title {
+	font-family: 'Lyon Text', serif;
+	font-size: 20px;
+	display: inline-block;	
+	width: 300px;
+	margin: 0px 15px;
+	float: left;
+}
+
+.article-meta {
+	font-size: 14px;
+	color: #9B9B9B;
+	margin: 0px 15px;
+	float: left;
+}
+
+
+
+
+
+
+
+.hovercard {
+	position: absolute;
+	width: 360px;
+	height: 100px;
+	border-radius: 2px;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.1);
+	/* offset-x | offset-y | blur-radius | color */
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+	z-index: 10;
+	-transition: 0.12s ease-in;
+	-webkit-transition: 0.12s ease-in;
+	opacity: 0;
+}
+
+#hovercardAlison {
+
+}
+
+#hovercardAndy {
+	height: 120px;
+}
+
+.hovercardInfo {
+	margin: 12px 20px;
+}
+
+.hovercard h4 {
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0px 0px 5px 0px;
+	padding: 0;
+	line-height: 1.2;
+}
+
+#alison:hover ~ #hovercardAlison {
+	opacity: 1;
+}
+
+#andy:hover ~ #hovercardAndy {
+	opacity: 1;
+}
+
+#alisonPoints {
+	float: right;
+	margin-top: -23px;
+}
+
+#alisonPoints::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background-color: #FFCC43;
+	margin: 0px 6px 0px 0px;	
+}
+
+
+
+
+
+#modules {
+	width: 1200px;
+}
+
+.modulePanel {
+	width: 530px;
+	height: 240px;
+	border-radius: 2px;
+	background-color: white;
+	border: 1px solid rgba(0,0,0,0.1);
+	position: relative;
+	top: 120px;
+	-transition: 0.2s;
+	-webkit-transition: 0.2s;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.moduleVideo {
+	height: 470px;
+}
+
+.moduleLink {
+	height: 250px;
+	margin-top: -230px;
+}
+
+.modulePanelTitle {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 10px 24px;
+	font-size: 20px;
+}
+
+	.modulePanelTitle > .status {
+		position: absolute;
+		margin-top: 12px;
+	}
+
+.modulePanelBody {
+	padding: 0px 24px;
+}
+
+p.textprev {
+	font-family: 'Lyon Text';
+	line-height: 1.6;
+	font-size: 18px;
+	color: #898989;
+}
+	h2 {
+		font-family: 'Lyon Text', serif;
+		font-size: 24px;
+		color: #000;
+		line-height: 1.2;
+		font-weight: 400;
+		margin: 10px 0px -20px 0px;
+	}
+
+.label {
+	font-size: 12px;
+	background: #9A9FB8;
+	padding: 2px 7px 3px 7px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 500;
+	vertical-align: top;
+}
+
+.right {
+	text-align: right;
+	float: right;
+	vertical-align: bottom;
+}
+
+
+.modulePanel:hover {
+	/*background-color: rgba(83,187,138,0.04);*/
+	background-color: #F8FCFB;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+
+#links {
+	position: absolute;
+	margin-top: 120px;
+	width: 360px;
+	left: 1240px;
+}
+
+.btnLink {
+	padding: 15px 20px;
+	background-color: #53BB8A;
+	color: #fff;
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 10px;
+}
+
+
+
+
+@font-face {
+    font-family:'Neue Haas Unica Pro';
+    src: url('fonts/Neue Haas Unica Pro Light.eot');
+	src: url('fonts/Neue Haas Unica Pro Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Neue Haas Unica Pro Light.woff2') format('woff2'),
+		url('fonts/Neue Haas Unica Pro Light.woff') format('woff'),
+		url('fonts/Neue Haas Unica Pro Light.svg#Neue Haas Unica Pro Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Neue Haas Unica Pro';
+    src: url('fonts/Neue Haas Unica Pro Bold.eot');
+	src: url('fonts/Neue Haas Unica Pro Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Neue Haas Unica Pro Bold.woff2') format('woff2'),
+		url('fonts/Neue Haas Unica Pro Bold.woff') format('woff'),
+		url('fonts/Neue Haas Unica Pro Bold.svg#Neue Haas Unica Pro Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Neue Haas Unica Pro';
+    src: url('fonts/Neue Haas Unica Pro.eot');
+	src: url('fonts/Neue Haas Unica Pro.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Neue Haas Unica Pro.woff2') format('woff2'),
+		url('fonts/Neue Haas Unica Pro.woff') format('woff'),
+		url('fonts/Neue Haas Unica Pro.svg#Neue Haas Unica Pro') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Lyon Text Regular';
+    src: url('fonts/LyonText-Regular.eot');
+	src: url('fonts/LyonText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LyonText-Regular.woff2') format('woff2'),
+		url('fonts/LyonText-Regular.woff') format('woff'),
+		url('fonts/LyonText-Regular.svg#LyonText-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}

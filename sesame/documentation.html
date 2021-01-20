@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>Sesame: Case Study</title>
+	<meta property="og:title" content="Sesame"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://sesame.smvi.co/"/>
+	<meta property="og:image:url" content="http://sesame.smvi.co/assets/og-cover.png"/>
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:description" content="Sesame – description"/>
+
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/gumshoe.min.js"></script>
+	<script src="js/scrollgress.min.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/documentation.css" />
+
+</head>
+
+<body>
+	<nav data-gumshoe>
+		<span id="nav-contents">Contents</span>
+		<ul id="contents" data-gumshoe>
+			<li><span class="num">01</span>&nbsp;&nbsp;&nbsp;<a data-scroll href="#introduction">Introduction</a></li>
+			<li><span class="num">02</span>&nbsp;&nbsp;&nbsp;<a data-scroll href="#textbook">The textbook problem</a></li>
+				<!-- <li class="sub"><a data-scroll href="#commons">The fundamental nature of textbooks</a></li> -->
+				<li class="sub"><a data-scroll href="#economy">The economy of learning</a></li>
+				<li class="sub"><a data-scroll href="#technology-clasroom">Technology in the classroom</a></li>
+			<li><span class="num">03</span>&nbsp;&nbsp;&nbsp;<a data-scroll href="#open-ed">Opening education</a></li>
+				<li class="sub"><a data-scroll href="#modularity">Modularity</a></li>
+				<li class="sub"><a data-scroll href="#social">Social Learning</a></li>
+			<li><span class="num">04</span>&nbsp;&nbsp;&nbsp;<a data-scroll href="#sesame">Designing Sesame</a></li>
+				<li class="sub"><a data-scroll href="#commons">Flattening the classroom</a></li>
+				<li class="sub"><a data-scroll href="#reading">Screen reading</a></li>
+				<li class="sub"><a data-scroll href="#engagement">Engagement</a></li>
+				<li class="sub"><a data-scroll href="#search">Networked search</a></li>
+				<li class="sub"><a data-scroll href="#next">Next steps</a></li>
+			<li><span class="num">05</span>&nbsp;&nbsp;&nbsp;<a data-scroll href="#reflection">Reflection</a></li>
+				<li class="sub"><a data-scroll href="#process">On process</a></li>
+				<li class="sub"><a data-scroll href="#process-design">On design</a></li>
+		</ul>	
+		<div id="attribution"><h6><a href="http://www.karenkeung.com/" target="_blank">Karen Keung</a><br>for YSDN 4900 with Angela Iarocci</h6></div>
+	</nav>
+
+	<div class="container">
+		<!-- <div id="nav"> -->
+			<a data-scroll href="#" id="nav">Sesame</a>
+		<!-- </div> -->
+		<!-- <div id="nav-right"> -->
+			<a href="index.html" id="nav-right">Return to site</a>
+		<!-- </div> -->
+
+
+		<div id="main-body">
+			<section id="introduction">
+				<h2>Proposing a speculative enriched learning platform for higher education</h2>
+				<p>As a design student, I’m fortunate to have had an education that values small studio environments. Over the last four years, I’ve gotten to know my peers as a community, and frequently have open class critiques and conversations. However, this experience cannot be taken for granted, as I understand it is a very different learning environment to the lecture-based experience majority of post-secondary education students have.</p>
+
+				<p><em>Sesame</em> began as a project in the fall of 2016. After working on designing <a href="http://www.summitlearning.org/" target="_blank">personalized education software</a> for K-12 students during the summer, I asked myself why such attention isn’t being directed to higher education, when students have developed more autonomy over their learning. Heading into the fourth year of my undergraduate degree, I was frustrated by the ever-increasing design disparity between the plethora of social and entertainment-oriented digital tools I have at my disposal and the tools I’m asked to use as a student: Textbooks, despite being discouragingly expensive, are often a mandated primary resource across course syllabi (yet are rarely used as such), and e-book alternatives are clunky and dated despite being newer.</p>
+
+				<p><em>Sesame</em> is a free, browser-based open education ecosystem that aims to reconcile students with textbooks and other learning resources while centralizing discussion and feedback between peers and authors. This project is just one entry into a much larger conversation around the academic tools available for students today. Given the highly sophisticated technology we use to power our social lives, why don’t our academic tools deserve the same?</p>
+			</section>
+			
+
+			<section id="textbook">
+				<h2>The textbook problem</h2>
+				<p><em>Sesame</em> began as an investigation into the environmental and economical sustainability of the textbook industry. Textbooks, particularly in higher education, are shifting from a primary learning resource to one that is consumed non-linearly and as a secondary tool.</p>
+				<p>By nature, textbooks are designed as one-size-fits-all artifacts: “<a href="https://www.theatlantic.com/technology/archive/2012/01/a-brief-history-of-textbooks-or-why-apples-new-textbook-experience-is-actually-revolutionary/251662/" target="_blank">The defining element of textbooks, up to now, has been their commodity status: Being standardized, they’re also impersonal. They’re transient. ... They enforce the notion of the student as a cog and of learning as a machine, and effectively frame education as, first and foremost, an act of consumption rather than exploration.</a>” Despite widespread cognizance that all students learn differently, post-secondary course syllabi often mandate textbooks as primary learning resources; in reality, they are rarely used as such. Particularly in higher education where students have developed a greater sense of learner autonomy, textbooks have instead taken a seat on the back burner of the landscape of alternative resources available.</p>
+				<p>Today, the knowledge economy forms the backbone of global economic structure. The ubiquitous proliferation of digital technologies across industries has made the storage, access, and circulation of information nearly instantaneous for anyone who is connected to the Internet. While the effects of sophisticated technology impact all industries, ramifications are particularly relevant to education and the textbook market, overturning the direction of traditional knowledge circulation, as well as students’ attitudes toward traditional print medium.</p>
+				<p>Considering the rapid pace of information dissemination, it is understandable that students today “<a href="https://aeon.co/essays/can-students-who-are-constantly-on-their-devices-actually-learn" target="_blank">skim information, rarely reread, and engage in something called ‘power browsing’ rather than actual reading.</a>” The proliferation of rich multimedia such as video, podcasts, and interactive websites also multiply the channels of information delivery.</p>
+
+				<h3 id="economy">The economy of learning</h3>
+				<p>The post-secondary textbook industry remains deeply systematized. The North American textbook market is oligopolistic, wherein just a handful of major publishers sit at the top, resulting in both low pressure to innovate, and in the exorbitant textbook prices often cited by students as a primary priority when deciding whether—or how—to obtain textbooks.</p>
+				<p>Dr. James V. Koch, an economics professor, has done extensive work in the economics of education. He likens the price inelasticity of the textbook market to that of the pharmaceutical market, where “<a href="http://www.jamesvkoch.com/uploads/Turning_the_Page_Lumina_Foundation_0713.pdf" target="_blank">individuals (professors and physicians) who tell consumers what items they should purchase aren’t the people (students and patients) who actually pay for the items.</a>” Because the supply side of the market is highly concentrated, there is little competition and “<a href="http://www.jamesvkoch.com/uploads/Turning_the_Page_Lumina_Foundation_0713.pdf" target="_blank">this behaviour might include high prices, reduced output and diminished innovation.</a>”</p>
+				<p>Although publishers are developing digital alternatives for textbooks, they are neither enticing for students nor fiscally optimal. In reality, while “<a href="http://www.jamesvkoch.com/uploads/Turning_the_Page_Lumina_Foundation_0713.pdf" target="_blank">e-books represent a promising new textbook mode, … digital rights-management techniques enable publishers to turn off digital access at the end of an academic term. This is a stronger and more immediate form of artificial obsolescence than publishers have enjoyed with print textbooks.</a>”</p>
+
+  				<p>There are numerous effects to which the ubiquity of technology spotlights the growing incongruence between the way the textbook industry operates, and the every day habits of students and teachers. Despite the prevalence of sophisticated technology in our every day lives, the uptake has been slow in higher education systems. If technology encourages the innovation and change in products that we are rewarded with in our everyday lives, why is this not the case for academia, which is indisputably nontrivial to our current and future students?</p>
+  				
+
+  				<h3 id="technology-clasroom">Technology in the classroom</h3>
+  				<p>While the rate of students entering higher education is steadily on the rise, the natural consequence is that the <a href="http://ocufa.on.ca/blog-posts/data-check-class-sizes-continue-to-grow-at-ontarios-universities/" target=_"blank">class sizes are also increasing</a>. It is not uncommon for students to be in lecture halls among hundreds of others; and, in such environments, it is difficult to engage with peers, let alone the professor, in any meaningful way.</p>
+				<p>Some courses have adopted a ‘blended learning’ approach where students attend lectures in-person, and then participate in discussion online through a learning management system (<span class="smallcaps">LMS</span>). <span class="smallcaps">LMS</span> software is implemented across universities and colleges as an administrative and social tool for students and professors; for example, allowing for teachers to deliver electronic resources, peer discussion boards, and electronic grading. However, these systems exist disparately—a 2012 report observes no less than 9 distinct systems implemented across Canada—and “<a href="https://teachonline.ca/sites/default/files/contactNorth/files/pdf/trends-and-directions/lms_series_-_module_1.pdf" target=_"blank">only one in four students think that these <span class="smallcaps">LMS</span> systems are being used effectively within their institutions, and only one in five think that the <span class="smallcaps">LMS</span> systems are well integrated in classroom activities for blended learning.</a>”</p>
+
+				<p>In summary, the industry in its current state is coloured by a lack of trust between key stakeholders of an institutional product: the students, the professors, and the system. There is a disconnect between the students—the users of the system—and the publishers—those who design the system. Current textbook design practices do not appear to leave room for student input. A core tenet of product design today, as a discipline, is valuing user feedback highly, prioritizing the needs of the end user—the student—in a process of iteration and cyclical development. <em>Sesame</em> as a study is interested in how applying a user-centred (student-centred) design process can shift the status quo of educational tools <span class="figure"><a data-scroll class="fig" href="#fig1">Figure 1</span></a>:</p>
+
+				<img src="assets/cs/fig1.png" width="670px" id="fig1" class="border">
+				<p class="caption"><span class="figure">Figure 1</span>. Schematic of textbook production. In the traditional textbook market, the production chain ends when the student, the end-user, receives and uses the artifact. Yet, any feedback never makes it back up the chain. How can iterative production shorten, simplify, and improve the chain?</p>
+			</section>
+
+
+			<section id="open-ed">
+				<h2>Opening education</h2>
+				<p>While progress is slow, there have indeed been numerous revolutionary and successful products in open education. <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> is an archetypal example of the power that the “commons” has on impacting knowledge circulation. In recent years, browser-based software, both non-profit and for-profit, like <a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> and <a href="http://coursera.org/" target="_blank">Coursera</a> are referred to as massive open online courseware (<span class="smallcaps">MOOC</span>s). <span class="smallcaps">MOOC</span>s make it easy for anyone with Internet access to learn at their own pace.</p>
+				<p>Each of these innovations occupy an independent space to the software used widely across institutions such as learning management systems. Consistent and timely innovation in this space highlights the irony in the increasing sophistication gap between free education software, and software implemented in higher education where students pay thousands in annual tuition.</p>
+				<p>Yochai Benkler, Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School, has dedicated years of his career to studying cyberspace and commons-based information and resource management. His work examines how the revolution in technology allows collaboration that carries transformative consequences for global economy and industry. Benkler refers to peer production as an “<a href="https://www.dropbox.com/s/jv786cih8bjqo64/Strategic%20Organization-2016-Benkler-1476127016652606.pdf?dl=0" target="blank">Internet-mediated social practice</a>” that “<a href="https://www.dropbox.com/s/jv786cih8bjqo64/Strategic%20Organization-2016-Benkler-1476127016652606.pdf?dl=0" target="blank">plays a more significant role in the information production environment that was theoretically admissible by any economic model of motivation and organization that prevailed at the turn of the millennium.</a>” The Internet affords access to a range of resources, including formal and informal educational materials, “<a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-20" target="_blank">fostering a new culture of sharing.</a>” In light of this, some core assumptions of our economic models are thrust under the microscope: Are the incentives at the core of innovation social, rather than material? What does ownership mean in a new era of sharing?</p>
+				<p>Benkler’s work is fundamental to understanding how a number of core principles of peer production can be conducive toward designing an information system in higher education. In his publication <a href="http://www.benkler.org/Common_Wisdom.pdf" target="_blank"><em>Common Wisdom</em></a>, Benkler applies his research specifically to textbooks and educational resources:</p>
+				<blockquote>“The fact that this vast pool of human talent, interest, knowledge, and experience now has, as it never had before, access to the basic necessary physical capital necessary to make and communicate cultural materials of all sorts has created a deep transformation in the digitally networked environment, and in the information economy and society. The critical change is that social production based on commons, rather than property, has become a significant force in the economy.”</blockquote>
+				 <p>Open learning as a philosophy embraces “<a href="http://www.benkler.org/Common_Wisdom.pdf" target="_blank">pedagogical efficiency.</a>” Open Education Resources (<span class="smallcaps">OER</span>) are defined as “<a href="http://www.irrodl.org/index.php/irrodl/article/view/1137/2130" target="_blank">digitized materials offered freely and openly for educators, students and self-learners to use and reuse for teaching, learning and research</a>” offering “<a href="https://www.oercommons.org/about" target="_blank">opportunities for systemic change in teaching and learning content through engaging educators in new participatory processes and effective technologies for engaging with learning.</a>”</p>
+			
+				<h3 id="modularity">Modularity</h3>
+				<p>One of the core principles of <span class="smallcaps">OER</span> is modularity, a primary theme in literature surveyed throughout this study. Benkler introduces the concept of modularity in his <a href="http://www.benkler.org/Common_Wisdom.pdf" target="_blank">definition</a> of the basic unit of an educational resource as a discrete learning object providing a single learning experience for a student: “The discreteness of learning objects of this sort, as compared to a more sophisticated, integrated set of materials like a textbook, is that they can be created whole in small and discrete chunks, that need no conceptual coherence with other similar objects until the moment at which they are collated into a learning experience—if that.”</p>
+
+				<p>Modularity, as a principle of participatory design, allows for “<a href="http://www.helenarmstrong.us/research/participate-designing-for-participatory-culture-book/" target="_blank">the use of standardized units or sections for easy construction and flexible arrangement.</a>” Because segmentation means that individual pieces of content “<a href="http://www.helenarmstrong.us/research/participate-designing-for-participatory-culture-book/" target="_blank">can be altered or replaced without affecting the remainder of the system,</a>” modularity aptly allows materials to remain fluid and dynamic, <a href="http://cshe.berkeley.edu/sites/default/files/shared/publications/docs/ROPs-Matkin-OpenLearning-03-31-09.pdf" target="_blank">according to</a> Gary W. Matkin,  Dean of Continuing Education at UC Irvine:
+					<blockquote>“Given the right infrastructure, digitized assets can easily be altered. The alteration of a static textbook, then, could be prompted by a number of purposes. The material could be updated, say, to incorporate new knowledge. It could be improved as students and teachers develop better ways of expressing concepts or ordering learning objects. It could be localized or customized for a variety of learners, whether in different cultures or at different levels of education.”</blockquote>
+				</p>
+
+				<p> The primary power of modularization and segmentation is realized from a production perspective as well as a consumption perspective. Of the former, modularizing content production leverages a large, diverse network of knowledgeable individuals, potentially distributing the work of authorship, previously accomplished by a single entity in the traditional publishing sense, into the hands of “<a href="http://www.benkler.org/Common_Wisdom.pdf" target="_blank">a billion people in advanced economies [who] have between two and six billion spare hours among them, <em>every day</em>.</a>” Matkin <a href="http://cshe.berkeley.edu/sites/default/files/shared/publications/docs/ROPs-Matkin-OpenLearning-03-31-09.pdf" target="_blank">argues</a> that “this montage model, where more extensive learning pathways or courses are made more modular or unbundled, is supplanting the linear model, where one concept builds upon another. In this model, material is organized in such a way that new and different contexts can be built from individual learning objects.” Therefore, stakeholders can benefit from the butterfly effect when modularity and open learning are combined.</p>
+
+				<p>For consumption, modularization means that students are free to interact with materials as they need them. Not only have students reported (during primary rseearch) using traditional textbooks nonlinearly, but being prescribed only fractions of an entire volume. Modularization means that professors can prescribe only relevant pieces of knowledge to their students, embracing the aforementioned notion of pedagogical efficiency. Matkin similarly supports that “<a href="http://cshe.berkeley.edu/sites/default/files/shared/publications/docs/ROPs-Matkin-OpenLearning-03-31-09.pdf" target="_blank">educational materials that are modular in organization will find the most users and re-users.</a>” Modularization also allows for niche fields of knowledge to emerge, allowing students to engage with a long tail of subjects that might fascinate them: “<a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-20" target="_blank">For any topic that a student is passionate about, there is likely to be an online niche community of practice of others who share that passion.</a>”</p>
+
+				<p>In a networked space where a large collective has put forth effort to produce and curate resources, modularity also implies the potential to create packets of learning suitable not only for diverse content, but for diverse styles of learning: “<a href="http://cshe.berkeley.edu/sites/default/files/shared/publications/docs/ROPs-Matkin-OpenLearning-03-31-09.pdf" target="_blank">The customizable nature of dynamic material can allow the same material to be presented in multiple ways so that learners can look at it through different lenses.</a>” This might include different media such as audio/video resources or interactive activities. Because open contribution leverages the resources at the hands of every other engaged participant in a given community, modularization also reduces cost for instructors in an economic sense.</p>
+
+				<p>Benkler <a href="http://www.benkler.org/Common_Wisdom.pdf" target="_blank">suggests</a> that “for many digital learning objects, a well-searchable space in which individuals simply make objects and make them available freely is enough to generate a wealth of components that teachers can then mix and match to create their own collection.” Instead of individually sourcing different <em>discrete learning objects</em> together, the cost to customize content toward personalized instruction becomes a trivial amount of time when the commons have collectively generated a bank of sorts. Especially in higher education, where professors ideally enjoy a larger degree of freedom in structuring their syllabus and classroom experience, “<a href="http://www.benkler.org/Common_Wisdom.pdf" target="_blank">each teacher would create his or her own curriculum, syllabus, and classroom framework; and students in student-centred learning environments could do the same</a>” ultimately creating a more personalized and enriching learning experience.</p>
+
+				<h3 id="social">Social Learning</h3>
+				<p>Informally, students today already use various social media to collaborate with peers and friends. Students report using Facebook Groups, for example, for conversing with peers and organizing student study groups. The diverse suite of tools available for use in an educational context demonstrate that ‘social learning’ is another core pillar of a networked learning experience. Brown and Adler <a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-2" target="_blank">suggest</a>:
+				<blockquote>“The most profound impact of the Internet, an impact that has yet to be fully realized, is its ability to support and expand the various aspects of social learning. ... Social learning is based on the premise that our understanding of content is socially constructed through conversations about that content and through grounded interactions, especially with others.”</blockquote></p>
+				<p>Socially-minded tools like blogs and social networks make up a “<a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-2" target="_blank">new user-centric information infrastructure that emphasizes participation over presentation, that encourages focused conversation and [vernacular] briefs rather than traditional publication, form[ing] the basis of a situated understanding emerging from action, not passivity.</a>” Brown and Adler <a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-2" target="_blank">postulate</a> a shift from the Cartesian view of learning to a social view—that “mastering a field of knowledge involves not only ‘learning about’ the subject matter but also ‘learning to be’ a full participant in the field.” Brown and Adler cite open-source software as a primary success case in social learning, as is the studio-based academic system in architecture and design education; however, the proliferation of forum-style, threaded conversations across the Internet confirms that engaging conversations can certainly be virtually facilitated.</p>
+				<p>Brown and Adler’s paper also suggests that having students share coursework publicly on the web can encourage students to become active participants in their education. When David Wiley <a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-2" target="_blank">asked his students</a> to post course discussion to public blogs and “outside comments showed up, indicating that the students really were plugging into the international community’s discourse, the quality of the writing improved again. The power of peer review had been brought to bear on the assignments.” Brown and Adler refer to this pedagogical mode as a <a href="http://er.educause.edu/articles/2008/1/minds-on-fire-open-education-the-long-tail-and-learning-2" target="_blank"><em>demand-pull</em></a> approach that provides “students with access to rich learning communities built around a practice. It is passion-based learning, motivated by the student either wanting to become a member of a particular community of practice or just wanting to learn about, make, or perform something.” While the demand-pull approach is resource-intensive, that is exactly what the Internet is equipped to handle. <span class="figure"><a data-scroll href="#fig2" class="fig">Figure 2</a></span> demonstrates how Sesame might open new channels of communication.</p>
+
+				<img src="assets/cs/fig2.png" width="600px" class="border" id="fig2">
+				<p class="caption"><span class="figure">Figure 2</span>. Given the current classroom structure, there are multiple untapped communication channels between parties that are easily remedied by the powers of the Internet today. Can exploring more of these channels encourage “passion-based” learning?
+			</section>
+
+			<section id="sesame">
+				<h2>Designing Sesame</h2>
+				<p>This study began as an inquiry of the economic and environmental sustainability of traditional textbook publishing. From the literature it is evident the problem space runs deep, and out of synthesis has emerged a fundamental pedagogical question: Can students in higher education benefit from an integrated virtual space in which they can access, consume, and engage with their peers as well as professors, authors, and the greater public sphere?</p>
+				<p>As a speculative proposal for the future of digital academic systems, Sesame addresses a few key design areas.</p>
+
+				<h3 id="commons">Flattening the classroom</h3>
+				<p><em>Sesame</em> is structured in two areas: the Commons and Classrooms. The Commons are open, public spaces that allow anyone in the public domain to view and add content, much like Wikipedia, with policies in place for attribution, version control, and peer review.</p>
+				<p><em>Sesame</em> Classrooms are powered by the Commons. Administrators of classrooms can fork content from related Commons modules, as well as independently add additional or supplemental material relevant to that classroom <a data-scroll href="#fig3" class="fig figure">Figure 3</a>. A student enrolled at an institution then enrolls in a Classroom through a unique join code, not unlike many <span class="smallcaps">LMS</span> systems today.</p>
+				<p>The scope of the current prototype, as well as designs featured in this case study, focuses on <em>Sesame</em> Classrooms. Further elaboration on the design and integration of the Commons can be found in <a data-scroll href="#process-design">Section 5</a>.</p>
+
+				<img src="assets/cs/modules.png" width="600px" class="border" id="fig3">
+				<p class="caption"><span class="figure">Figure 3</span>. This diagram demonstrates modularization of content.</p>
+
+				<p>The distinction between open and closed (Classroom and Commons) comes from multiple sources. One core tenet of <em>Sesame</em> is the flattening of the classroom environment, such that traditional hierarchical roles of the classroom do not dictate a linear flow of information. By allowing the Commons to be public realm, anyone can be a “student” and continue learning through Commons content.</p> 
+				<p>Secondly, primary research demonstrated that students value privacy and trust in an academic environment. Students I spoke to mentioned that they felt safer sharing resources with familiar friends and peers, whether for the reason of fearing repercussions for distributing potentially-copyrighted content or simply being judged by the public. Having a closed “space” in which only the immediate peers of a student can view shared content fosters open and relevant conversation.</p>
+				<p>The public arena of the Commons also functions as a repository for information or further discussion with the public at large. Flattening the classroom structure empowers students to take on mentorship and leadership roles in the <em>Sesame</em> community in subjects they have expertise in, as per Benkler, Brown and Adler’s ideas about <span class="smallcaps">OER</span>. Integrating Commons also has the benefit of enriching a student‘s education with interdisciplinary content.</p>
+				<p>Accustomed to lecture-hall education, students expect to sit passively and absorb information; yet, time and again we hear that engaged learning is the most effective mode of active learning. By introducing Commons and mentorship roles, <em>Sesame</em> aims to engender a different set of values in contemporary education.</p>
+				
+				<h3 id="reading">Covering the basics: The ergonomics of screen reading</h3>
+				<p><em>Sesame</em> hypothesizes that a natively designed digital reading experience can unlock potential interaction between student and material that enriches and facilitates learning.</p>
+
+				<p>Out of convenience, students today use e-books, which are most often a <span class="smallcaps">PDF</span> version of a textbook designed for print. This poses a problem with respect to the reading experience, as the typesetting and navigation of screen reading is very different from a physical book. Instead of trying to duplicate print, designing for screen reading should attempt to transpose the advantageous characteristics of reading from print, to an equivalent or superior experience on screen. As previously outlined, competition has optimized products in the commercial space for comfortable consumption—digital products like commercial media, online news, are well-designed for reading comfort while academia suffers.</p>
+				<p>Researchers agree that a substantial factor in determining reader success with screen reading is psychological. A German study theorizes “haptic dissonance” as an antecedent of e-book adoption and acceptance. Authors Gerlach and Buxmann also criticize existing literature in the field to lack scholarly-based insights, as quantitative studies often fail to control reading conditions, environments, and readers themselves. In their <a href="http://aisel.aisnet.org/ecis2011/141" target="_blank">study</a>, they hypothesize that “haptics (i.e., the tactile feel of reading a printed book) play an important role in attitudes towards books, thus, affecting the acceptance of e-books where those haptic attributes are missing.”
+				 <p>Therefore, attempts to model digital reading experiences entirely after print are missing the mark, so to speak. The current, and future generations of students grew up with screens and therefore have developed their own associations with native reading experiences that <em>Sesame</em> can leverage.</p>
+				<p>The act of flipping pages, for example, is an archaic experience for people who are more used to infinite scrolling. <em>Sesame</em> breaks down content into digestible lengths (modules). Rather than infinite scrolling which can also disorient readers, <em>Sesame</em> encourages chunking of content into modules.</p>
+				<p><em>Sesame</em> uses optimal reading width and a generous font size to encourage comfortable reading. The background colour provides softer contrast for long-form reading while remaining high contrast enough to read from a distance <a data-scroll href="#fig4" class="fig figure">Figure 4</a>. We might also imagine a suite of customizable options for the reading experience, including scale and contrast, as well as aids for the visually-impaired.</p>
+			</section>
+				
+				<video src="assets/psych-fixed.mp4" width="100%" min-width="720px" id="psych" class="shadow" controls loop></video>
+				<p class="caption"><span class="figure">Figure 4</span>. A 600px container for the body text keeps a comfortable line length. Sesame’s navigation bar is removed in the reading environment, and extra metadata such as the required reading tag fades on scroll to keep reading a distraction-free experience.</p>
+
+			<section>
+				<p>During testing for the initial prototyping phase, participants described the reading environment as comfortable, pointing out specific visual design aspects like column width, font size, and type treatment. Participants were particularly enthusiastic about this core feature of <em>Sesame</em>, and appreciated the exclusion of “flipping” pages that digital translations of textbooks often employ.</p>
+
+				<div class="aside">
+					<h6>Summary of design considerations</h6>
+					<h5>Reading with <em>Sesame</em></h5>
+					<ul class="list">
+						<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX integration</a> standardizes mathematical notation across subjects on Sesame and the Internet in general as a best practice.</li>
+						<li><a href="http://sesame.smvi.co/#arthistory" target=_"blank">Image carousels and asides</a> for visual-heavy content ranging from scientific diagrams to art history and design.</li>
+						<li>Sesame, being browser-based, allows for full copy and paste functionality of text and other content, as opposed to scanned images or PDFs which can cause formatting complications.</li>
+						<li>Embedding media, such as videos, inline allows students to view material without leaving the page, decreasing the opportunity to be distracted.</li>
+					</ul>
+				</div>
+
+				<p>Feedback from students also led to the adjustment of page layout such that the browser could be comfortably viewed at half-width <span class="figure"><a data-scroll href="#fig5" class="fig">Figure 5</a></span>. These proportions are also appropriate for tablet browsing. Students explained that they may prefer to multi-task on desktop, or take notes simultaneously in the text editor of their choice.</p>
+			</section>
+
+				<img src="assets/cs/halfscreen1.png" width="395px" class="inline shadow" id="fig5">
+				<img src="assets/cs/halfscreen2.png" width="395px" class="inline shadow">	
+				<p class="caption"><span class="figure">Figure 5</span>. Sesame is designed to be fully functional at half a typical browser width. The discussion panel comes up from the bottom of the screen instead of the left.</p>
+				<!-- <img src="assets/cs/search2.png" width="720px"> -->
+			
+			<section>
+				<p><em>Sesame</em>, in its current design, makes an effort to differentiate, not emulate, screen reading from the traditional experience of reading a printed book by embracing the way students have come to navigate browser-based content.</p>
+				<p>Beyond covering the basics of a comfortable reading experience, an innovative reading platform should consider new ways of reading on screen; for example, one might imagine a speed reading interface, a collaboration mode that may be enabled for certain types of text, or the implementation of a break timer to reduce eye strain <a data-scroll href="#fig6" class="fig figure">Figure 6</a>.</p>
+				<p>Above all, <em>Sesame</em> is above all a framework that values iteration, and a core tenet of the platform is to value iteration. <em>Sesame</em> can potentially open-source the development of the authorship platform such that a wide variety of content can be imported into different formats to accommodate discipline-specific layouts.</p>
+			
+			<img src="assets/cs/earlysketch1_break.png" width="720px" class="shadow" id="fig6">
+			<p class="caption"><span class="figure">Figure 6</span>. An early sketch of an automated break timer that encourages the student to take frequent breaks from reading; for example, should the student have remained on the page for <em>x</em> consecutive minutes.</p>
+
+			<!-- NEW --> 
+
+				<h3 id="engagement">Contextual engagement</h3>
+				<p>Another priority for students is convenience. Learnings from early primary research affirmed that students are busy, and convenience is king—and not merely in terms of access to textbooks. Timeliness can invisibly impact the way students interact with learning material. For example, peer-to-peer engagement today in any given <span class="smallcaps">LMS</span> is usually in the form of a forum or discussion arena—a rather archaic form of dialogue in terms of Internet technology today. Given the nature of online discourse today, students are more accustomed to short comments rather than mandatory three-hundred word responses.</p>
+				<p>Contextual engagement recognizes that students feel inclined to participate only when it is convenient to do so. <em>Sesame</em> builds in-line engagement through an annotation system <a data-scroll href="#fig7" class="fig figure">Figure 7</a><a data-scroll href="#fig8" class="fig figure"> & 8</a>. Parallel to the text is the ability to highlight any part, leave a note—either public or privately, the latter of which is distinguished by a different colour and becomes part of a private collection of notes—and leaves the conversation open to peers.</p>
+			</section>
+				
+
+				<img src="assets/cs/discuss1.png" width="100%" min-width="600px" class="shadow inline" id="fig7">
+				<p class="caption"><span class="figure">Figure 7</span>. In-line discussion.</p>
+
+				<img src="assets/cs/discuss-flow.png" width="100%" min-width="600px" id="fig8">
+				<p class="caption"><span class="figure">Figure 8</span>. Flow of the discussion experience.</p>
+
+			<section>		
+				<p>While designing the discussion feature, motivation and incentivization were questions that came up. I explored options of a points system as well as achievements. Testing this feature with students revealed a multitude of different reactions, and the feedback was rich enough that I felt incentivization <a data-scroll href="#next">became a question of its own</a>.</p>
+
+				<p>Designing <em>Sesame</em>, I thought about how the basic idea of annotation could be re-evaluated. Collaborative annotation was a concept explored very early on <a data-scroll href="#fig9" class="fig figure">Figure 9</a>, and is what evolved into the public versus private annotation modes in the proposal today.</p>
+				
+				<img src="assets/cs/earlysketch2_annotation.png" width="720px" class="border" id="fig9">
+				<p class="caption"><span class="figure">Figure 9</span>. A very, very early sketch imagining what real-time collaborative annotation might feel like.</p>
+
+				<p>One of the things I learned in my design education is that <em>reaction</em> is key to reading comprehension. A professor taught me to always pencil in notes right next to the text we were reading, as those initial thoughts are often the seeds of much more. Sesame builds upon this principle in hopes that in-line engagement, both with self and others, leads to higher engagement with learning material.</p>
+
+
+				<p>Given the contemporary student’s aptitude for navigating the digital resources of the web, students are often naturally supplementing their own education. In primary research, students I spoke with cited Google searches as their first resource when seeking clarification on a topic presented in a lecture or reading. The capability to find and share those resources with a Classroom’s participants—in-context—will hopefully increase their utility <a data-scroll href="#fig10" class="fig figure">Figure 10</a>.</p>
+
+				<p>Students also use social networks or utility tools such as <a href="https://www.facebook.com/" target="_blank">Facebook</a> and <a href="https://www.dropbox.com/personal" target="_blank">Dropbox</a> to share files and resources amongst friends. While easily integrated with existing social behaviour, this closes circulation to those socially engaged with one another. On a logistical level, this behaviour or flow, is potentially distracting as the student must disengage from their academic tasks to engage in a social tool, and more often that not those social tools hold the potential of distraction.	</p>
+
+				<div class="aside">
+					<h6>Summary of LHP components</h6>
+					<h5>In-line engagement opportunities on <em>Sesame</em></h5>
+					<ul class="list">
+						<li>Private annotation allows students to jot down private notes that can be reviewed, exported, or viewed alongside with public annotations</li>
+						<li>Public comments and questions lower the barrier to engagement, and encourage lively conversation as opposed to formalized discussion via a forum structure.</li>
+						<li>Additional or related resources supplied by professor and peers form the basis of an organic learning repository.</li>
+					</ul>
+				</div>
+
+				<img src="assets/cs/LHP.png" width="810px" id="fig10">
+				<p class="caption"><span class="figure">Figure 10</span>. Various potential forms of the left hand panel (LHP), dynamic to which of the three forms of engagement are applicable.</p>
+
+				<p>By centralizing resources and discussion to <em>Sesame</em> through <span class="smallcaps">LHP</span> components, students are able to read and find associated material in the one place. This mechanism is convenient, timely, and builds community. While primary research showed that a sense of comraderie varied from student to student, some felt strongly about teamwork and the value of sharing.</p>
+
+
+				<h3 id="search">Networked Search</h3>
+				<p>Resource sharing also resurfaces Benkler’s idea of a “well-searchable space [that] generates a wealth of components.” Through the suggested resources posted to <em>Sesame</em> over time, an organic, modular repository builds up through the efforts of authors as well as students. These suggested resources effectively formed as individual packets of learning objects.</p>
+				<p>What this means is a shift in the flow of information in a classroom—not only is the professor administering the organization of material, but learning objects that students are already using today become more widely circulated and via Sesame, become used in organic ways. As mentioned in <a data-scroll href="#open-ed">Section 3</a>, this style of circulation can help diverse styles of learning. Those who find videos helpful can easily access that right next to the content, instead of looking it up themselves. This in turn fosters a sense of community. As mentioned, modularity “allows for flexible arrangement and adaptive materials,” fitting to the way students use Internet resources anyway. Using a mechanism by which students can rate items with “Helpful,” items become self-circulating <a data-scroll href="#fig11" class="fig figure">Figure 11</a>. Lower quality, inaccurate, or outdated resources will naturally be replaced by better resources. Classroom adminstrators may also reserve the right to curate resources.</p>
+				
+				<img src="assets/cs/resources.png" width="700px" id="fig11">
+				<p class="caption"><span class="figure">Figure 11</span>. Sesame scrapes an image, title, and root domain from each link shared. Students can rate items as “helpful” to show appreciation as well as regulate quality.</p>
+
+				<p>To organize and surface all this resource bank, <em>Sesame</em>’s dynamic search feature leverages students’ browsing and search behaviour. Powered by machine learning, this speculative feature aggregates all students' behaviour in a given classroom or module to provide an enriched search experience.</p>
+				<p>Primary research—and first-hand experience—showed that students use <span class="smallcaps">CMD + F</span> liberally, whether finding a term in a <span class="smallcaps">PDF</span> textbook or on a website. By connecting the keyboard shortcut to an enriched search in the browser <a data-scroll href="#fig12" class="fig figure">Figure 12A-C</a>, we might imagine a host of <a href="index.html#feature-search" target="_blank">dynamic results</a>. On a basic level, search can easily identify how many times a query is on the current page, or perhaps whether a query has a matching definition or entity; beyond that, searching <em>Sesame</em> yields results tailored to your immediate search history, or perhaps timely context such as active discussions (discussions taking place before an upcoming evaluation), and of course, surfacing related modules and suggested resources <a data-scroll href="#fig13" class="fig figure">Figure 13</a>.</p>
+				<p>The development of search went through a few visual iterations:</p>
+
+				<img src="assets/cs/search1.png" width="720px" class="shadow" id="fig12">
+				<p class="caption"><span class="figure">Figure 12A</span>. Modal search box felt out of place across Sesame and obstructs a lot of the original context on screen.</p>
+
+				<img src="assets/cs/search2.png" width="720px" class="shadow">
+				<p class="caption"><span class="figure">Figure 12B</span>. Bottom bar allows for continuous horizontal scrolling for more content, but awkward use of space.</p>
+
+				<img src="assets/cs/search3.png" width="720px" class="shadow">
+				<p class="caption"><span class="figure">Figure 12C</span>. Final iteration places search as a right-hand panel. This counters LHP nicely, and allows content to peek through behind to demonstrate changes on screen.</p>
+
+				<img src="assets/cs/search4.png" width="924px" id="fig13">
+				<p class="caption"><span class="figure">Figure 13</span>. Depending on: the query, the searcher's unique search history and behaviour, and overall trends in the classroom, search results will vary. A comprehensive array of possible modules can be found on Sesame’s <a href="index.html#feature-search" target"_blank">product website</a>.</p>
+
+				<h3 id="next">Next steps</h3>
+				<p>Given the scope of this current iteration of Sesame as a project, the initial prototype I developed over the last four months only scratches the surface of the problem space. A number of ideas were shelved over the design process:</p>
+				
+				<h4>Incentivization and Gamification</h4>
+				<p>Over the course of those months, I also investigated how incentivization and motivation would play into engagement on Sesame. In the prototypes I developed during user testing <a data-scroll href="#fig14" class="fig figure">Figure 14–15</a>, I tested the idea of “contribution points” and badges as a method of motivation. For the most part, students assumed that a points system on <em>Sesame</em> would correlate to a participation grade in class. While possible, this was not the intended behaviour behind the design decision. Points were originally intended to be a running score across the Commons and Classrooms, and serve as a way to evaluate credibility; however, some students provided feedback that this type of motivation might encourage lower-quality posts.</p>
+				<p>On the other side of the coin, one student shared that a professor used online forum participation toward a bonus grade in class, and resulted in a large volume of quality, engaged contributions. Additionally, some students extended the discussion into the possibility of gamification including public leaderboards, with a mix of positive and negative responses.</p> 
+				<p>Given the mixed reactions and implications of designing a haphazard system, I decided to exclude an explicit incentivization system in the current proposal, as I identified more pertinent challenges for a “v.0” proposal.</p>
+
+					<img src="assets/cs/points.png" width="720px" class="shadow" id="fig14">
+					<p class="caption"><span class="figure">Figure 14</span>. Prototype testing students' reactions to gaining points after contributing to a conversation.</p>
+
+					<img src="assets/cs/profile.png" width="720px" class="shadow">
+					<p class="caption"><span class="figure">Figure 15</span>. Prototype testing students' reactions to a record of public achievements or badges to encourage consistent participation.</p>
+
+				<h4>Learning styles</h4>
+					<p>In developing personas and user flows for <em>Sesame</em>, I conducted brief research into learning styles, namely, the <a href="http://www4.ncsu.edu/unity/lockers/users/f/felder/public/ILSdir/styles.htm" target="_blank">Felder-Silverman learning style model</a> which describes four dimensions of learning styles, wherein each dimension is a linear continuum with a preference for a certain learning style: Active–Reflective, Sensing–Intuitive, Visual–Verbal, and Sequential–Global. 
+					While I could not afford the time and resources to include this as an explicit lineage of research into <em>Sesame</em>, learning styles are indeed an additional perspective to consider when designing an open-access learning platform.</p>
+
+				<h4>Classroom/Commons relationship</h4>
+					<p>Given more time, I would have loved to explore more of the mechanics behind the authorship platform powering the  Commons, and the dynamic between Classroom and Commons content. It was definitely a decision made out of convenience, as a student myself, to explore the student-side of the interface in more depth than the author-side; yet, both are equally important in the development of an institutionalized product. A conversation with Michael Evans, Associate Dean of Digital Learning and Innovation at Sheridan, confirmed that faculty and administrative adoption of technology is an enormous hurdle in inciting change at institutions.
+
+				<div class="aside">
+					<h6>The long tail</h6>
+					<h5>Questions guiding next steps</h5>
+					<ul class="list">
+						<li>Could the trend of ephemeral communication in social media take root in more serious applications? For example, could joinable converastions be a useful utility for study groups to form outside of social friend groups?</li>
+						<li>How does gamification shift the tone of an education platform?</li>
+						<li>What would AI-generated content summaries look like?</li>
+						<li>What would a self-quizzing platform look like? Could questions be generated based on the student’s past evaluation data?</li>
+
+					</ul>
+				</div>
+			</section>
+
+			<section id="reflection">
+				<h2>Reflection</h2>		
+
+				<h3 id="process">On process</h3>
+				<p>In addition to extensive literature review summarized in <a data-scroll href="#textbook">Sections 2</a> and <a data-scroll href="#open-ed">3</a>, I conducted primary research in three phases. In the fall, I conducted a quantitative survey via <a href="https://www.surveymonkey.com/" target="_blank">SurveyMonkey</a>, which was followed by individual conversations with a handful of undergraduate students studying in Ontario. Insights from these conversations guided the design exploration process that followed.</p>
+				<p>After developing an initial prototype, I conducted user testing sessions with students, some being repeated participants from the fall term research. I crafted a mix of prototypes using <span class="smallcaps">HTML/CSS</span> and <a href="http://principleformac.com/" target="_blank">Principle</a> in attempt to test specific features of <em>Sesame</em>.</p> 
+				<p>Given more time and resources, I would have pursued larger studies to gather less biased and more objective data. Nonetheless, each phase of research was arguably the most valuable aspect of the entire design process. Working on <em>Sesame</em> solidified, again, the value of speaking directly with the users one designs for.
+
+				<p>A significant takeaway from the user testing sessions was the way participants described and reacted to features in <em>Sesame</em>. Students consistently likened features and experiences in <em>Sesame</em> to existing social media platforms. This signals an important shift in the way the contemporary student perceives digital tools. The modes of consumption as defined by the platforms they use most often become the paradigms for interaction on the web and form the basis for expectations and preferences.</p>
+				<p>As a design student, this was a fascinating discovery: I anticipated the way I view and evaluate software might be different from a non-design college or university student, so to hear how my peers from a multitude of backgrounds evaluated their tools was eye-opening.</p>
+				<p>Testing <em>Sesame</em> with students demonstrated that there a gap still exists between what is and what could be in higher education. It will take time and active effort for all parties—students, educators, and authors—to recognize and react to these changes. It is therefore especially important to start these conversations through the development of speculative tools like <em>Sesame</em>.</p>
+
+				<p></p>
+
+
+
+				<h3 id="process-design">On design</h3>
+
+				<p><em>Sesame</em> has been an undertaking not just of my technical skills as a designer, but my research and synthesis skills. Upon reflection, I realize that many of the ideas explored here are not only out of pure secondary research but the impetus has been my actual undergraduate experience. I’ve had the privilege of receiving an objectively progressive, open, and socrative education and found a disparity amongst my own courses outside my department, and among my peers who study in different disicplines. <em>Sesame</em> has as much been about pushing the boundaries of technology/design as it is about a desire to disseminate a better experience for students as a whole.</p>
+
+				<p>In the <a data-scroll href="fig16" class="fig figure">Figure 16</a>, the x-axis refers to the degree of privacy for each type of tool. <span class="smallcaps">MOOC</span>s like <a href="http://coursera.org/" target="_blank">Coursera for example, and even tools like <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>, are free and open-source, but do not tie directly to a classroom experience and everything is available to the public domain. <span class="smallcaps">LMS</span>s, on the other side of the spectrum, are licensed by institution; however, suffer from lack of student autonomy and engagement.</p>
+
+				<img src="assets/cs/spectrum.png" width="700px" class="border">		
+				<p class="caption"><span class="figure">Figure 16</span>. Schematic identifying the relative positions of different types of education tools across accessibility (open/closed) and user engagement.</p>
+
+				<p><em>Sesame</em>’s hybrid ecosystem with both open and closed arenas targets the happy medium on this spectrum, by providing a centralized tool that encourage and facilitate engagement with content and peers.</p>
+
+
+
+				<h3 id="closing">In closing</h3>
+				<p>Upon reflection, I was perhaps overambitious from the outset of the project, not realizing the extent to which the topics I have explored are very much just the tip of the iceberg. <em>Sesame</em> has come to be what I hope is a probe into an enormous area of work in the future.</p>
+
+				<p>Given the deeply systematized nature of post-secondary institutional change, <em>Sesame</em> as a proposal is speculative, and ultimately advocates for the liberation of academic content—to put education back into the hands of students. Throughout our conversations, students often referred to assigned tasks “as a means to an end”; that is, readings or assignments were often completed with the sole objective of passing the class or achieving their degree.  As a student myself, this was disillusioning to feel in my own education. Learning, for the sake of learning, has been lost somewhere along the way—or perhaps, has been long missing.</p>
+
+				<p>When the audience is a demographic that’s so familiar with contemporary interaction paradigms, academic tools easily feel sluggish if they aren’t aligned with the user’s expectations of software, or suffer from <a data-scroll href="#fig1">slow iteration cycles</a>. Working on consumer-side products as a designer, I learned how much competition drives innovation. There is no equivalent commercial pressure in education software today, yet the impact is so important.</p>
+				<p><em>Sesame</em>, in addition to identifying an incongruency between what is and what could be, is about a reconciliation between students and learning. I believe we have a unique opportunity today, given the connectedness at our disposal, to rediscover that curiousity, and <em>Sesame</em> is my small contribution to a much deeper conversation.</p>
+
+				
+
+				
+			</section>
+
+
+
+			<section id="credits" style="margin-bottom:40px; opacity:0.25;">
+				<h6>0916—0416<br>
+				Illustrations on Sesame by <a href="https://thenounproject.com/voneff/" target="_blank">voneff</a> at the noun project</h6>
+			</section>
+
+		</div>
+	</div>
+	
+
+
+</body>
+
+
+<script>
+	smoothScroll.init();
+	gumshoe.init();
+	// $('body').scrollgress();
+
+</script>
+
+
+
+
+</html>

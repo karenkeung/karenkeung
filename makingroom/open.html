@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>Making Room</title>
+	<meta property="og:title" content="Making Room"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://www.makingroom.site"/>
+	<meta property="og:image:url" content="http://www.makingroom.site/assets/og-cover.png"/>
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:description" content="Making Room, thesis exhibition."/>
+
+	<link rel="shortcut icon" type="image/ico" href="/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" href="css/main.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
+</head>
+
+<body id="bg">
+
+	<div class="gallery">
+		<img data-src="assets/i.jpg">
+		<img data-src="assets/ii.jpg">
+		<img data-src="assets/iii.jpg">
+		<img data-src="assets/iv.jpg">
+		<img data-src="assets/v.jpg">
+		<img data-src="assets/vi.jpg">
+		<img data-src="assets/vii.jpg">
+		<div id="about">
+			<div id="about-mobile">
+				<input type="checkbox" id="about-open"></input>
+				<label for="about-open">About this project</label>
+				<br><br><br><br>
+				 <a href="https://m.me/g/Abb64bxU93MYRsw6" id="room">Come talk with me</a>
+				 <span class="meta byline">A project by <a href="http://www.karenkeung.com/" target="_blank">Karen Keung</a></span>
+
+				<div class="overlay">
+					<div class="overlay-text">
+						Making Room is the product of a year-long design investigation into the changing landscapes of domesticity, privacy, and the identification of self.
+						<div class="paragraphMarker"></div>A series of 7 photographs feature a single mirror in remote landscapes across Southern Ontario. While absent of human activity, these landscapes implicate the viewer through the intervention of the mirror.
+						<div class="paragraphMarker"></div><!-- Typically rooted to the interior and to the private, domesticity as a concept is challenged here in its displacement.  -->This series instigates parallel commentary surrounding how liminiality influences the making of a contemporary home, in both space and self. <a href="https://m.me/g/Abb64bxU93MYRsw6" id="room">Come talk with me</a>.
+						<br>
+						<label for="about-open">Close</label>
+						<span class="meta byline">A project by <a href="http://www.karenkeung.com/" target="_blank">Karen Keung</a></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-desktop">
+				Making Room is the product of a year-long design investigation into the changing landscapes of domesticity, privacy, and the identification of self.
+				<div class="paragraphMarker"></div>A series of 7 photographs feature a single mirror in remote landscapes across Southern Ontario. While absent of human activity, these landscapes implicate the viewer through the intervention of the mirror.
+				<div class="paragraphMarker"></div><!-- Typically rooted to the interior and to the private, domesticity as a concept is challenged here in its displacement.  -->This series instigates parallel commentary surrounding how liminality influences the making of a contemporary home, in both space and self. <a href="https://m.me/g/Abb64bxU93MYRsw6" id="room">Come talk with me</a>.
+				<span class="meta byline">A project by <a href="http://www.karenkeung.com/" target="_blank">Karen Keung</a></span>
+			</div>
+		</div>
+	</div>
+
+	<div id="viewCount" class="meta">
+		<div class="realtimeuserscounter"></div>
+		<script src="https://realtimeusers.bycontrast.co/realtimeusers.js"></script>
+	</div>	
+
+	<div id="counter" class="meta">
+		<label id="minutes">00</label>:<label id="seconds">00</label>
+	    <script type="text/javascript">
+	        var minutesLabel = document.getElementById("minutes");
+	        var secondsLabel = document.getElementById("seconds");
+	        var totalSeconds = 0;
+	        setInterval(setTime, 1000);
+
+	        function setTime()
+	        {
+	            ++totalSeconds;
+	            secondsLabel.innerHTML = pad(totalSeconds%60);
+	            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+	        }
+
+	        function pad(val)
+	        {
+	            var valString = val + "";
+	            if(valString.length < 2)
+	            {
+	                return "0" + valString;
+	            }
+	            else
+	            {
+	                return valString;
+	            }
+	        }
+	    </script>
+	</div>	
+
+	<a id="themeToggle">◐</a>
+			
+</body>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('#themeToggle').click(function (){
+	    $("#bg").toggleClass("darkTheme");
+	    $("#about").toggleClass("darkTheme");
+	    $(".overlay").toggleClass("darkTheme");
+	    $(".paragraphMarker").toggleClass("paragraphMarkerDark");
+	});
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93911265-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>

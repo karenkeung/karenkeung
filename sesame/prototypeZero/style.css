@@ -1,0 +1,468 @@
+/* Setup */
+body {
+	margin: 0px;
+	font-size: 16px;
+	font-family: 'Neue Haas Unica Pro', serif;
+	font-weight: 400;
+	background: #FAFAFA;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: block;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* BODY STRUCTURE */
+.lhc {
+	width: 440px;
+		margin-top: 86px;
+}
+
+.article-title {
+	width: 440px;
+	margin-left: 58px;
+	position: fixed;
+}
+	p.read-time {
+		font-family: 'Neue Haas Unica Pro';
+		font-size: 14px;
+		color: #98A097;
+		margin-top: -16px;
+	}
+
+.main {
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 9px;
+	width: 1200px;
+}
+
+.wrap {
+	margin: 0px 58px;
+}
+
+/* HEADER */
+	header {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		width: 100%;
+		height: 66px;
+		position: fixed;
+		top: 0;
+		background: #fafafa;
+		z-index: 10;
+	}
+	header ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	header ul li {
+		display: inline-block;
+	}
+
+	.nav p {
+		font-family: 'Neue Haas Unica Pro', sans-serif;
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.home {
+		margin-left: 0px;
+	}
+
+	.nav-back {		
+		margin-left: 58px;
+	}
+
+	.nav-back:before {
+		content: '←';
+		margin-left: -20px;
+		padding-right: 5px;
+	}
+	
+	.nav-points {
+		margin-left: 1210px;
+	}	
+
+	.nav-points:before {
+		content: '';
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+		background-color: #FFCC43;
+		margin: -1px 6px 0px 0px;
+	}
+
+	.nav-profile {
+		margin-left: 10px;
+	}
+	.nav-profile:after {
+		content: url(img/chevron.svg);
+		position: absolute;
+		margin-left: 8px;
+		margin-top: -2px;
+	}
+
+.text-body p {
+	width: 600px;
+	text-align: left;
+}
+
+/* TYPOGRAPHY */
+a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 400; 
+}
+
+
+p {
+	font-size: 20px;
+	font-family: 'Lyon Text';
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.p-figure {
+	font-family: 'Neue Haas Unica Pro';
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#key-ranvier {
+	font-weight: 600;
+	-webkit-transition: 0.2s;
+    transition: 0.2s;
+    background-color: rgba(82,120,173,0.15);
+}
+
+#key-ranvier:hover {
+	background-color: rgba(82,120,173,0.15);
+	cursor: pointer;
+}
+
+aside {
+	width: 200px;
+	position: absolute;
+	top: 2678px;
+	left: 660px;
+	font-size: 12px;
+	color: #797979;
+}
+
+	aside:before {
+		content: '☛';
+		margin-left: -20px;
+		padding-right: 8px;
+	}
+
+	aside#ranvier {
+		background-color: rgba(80,120,173,0.05);
+		border-radius: 2px;
+		padding: 10px 10px 10px 30px;
+	}
+
+/* It doesn't work idk why
+#key-ranvier:hover ~ aside#ranvier {
+	background-color: #000;
+	color: red;
+}*/
+
+
+/* FIGURE TEXT STYLES */
+	h2 {
+		font-family: 'Lyon Text', serif;
+		font-size: 28px;
+		line-height: 1.2;
+		font-weight: 400;
+		margin: -5px 0px 20px 0px;
+	}
+
+	h5 {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+		color: #98A097;
+		text-transform: uppercase;
+	}
+
+	.caption {
+		font-family: 'Neue Haas Unica Pro';
+		font-size: 14px;
+		color: #4A4A4A;
+	}		
+		
+figure {
+	padding: 0;
+	margin: 35px 0px 35px 0px;
+}
+
+.fig-small h5, .fig-small h2, .caption-small {
+	width: 320px !important;
+	vertical-align: top;
+	margin-top: -10px;
+}
+
+img.full {
+	width: 600px;
+}
+
+img.half {
+	width: 250px;
+	margin-top: -165px;
+	margin-left: 350px;
+}
+
+img.half-out {
+	width: 500px;	
+	margin-top: -198px;
+	margin-left: 350px;
+	vertical-align: top;
+}
+	img.v2 {
+		margin-top: -150px;
+	}
+
+
+.fig-video{
+	margin-top: -20px;
+}
+
+.badge {
+	width: 16px;
+	height: 16px;
+	border-radius: 100px;
+	background: #FFCC43;
+	margin-left: -40px;
+}
+	.badge:after {
+		content:'2';
+		font-size: 10px;
+		color: #fff;
+		text-align: center;
+		font-weight: 500;
+		position: absolute;
+		margin: -1px 5px;
+	}
+
+
+figure a {
+	text-decoration: none;
+	color: inherit;
+	background-color: rgba(255,209,0,0.05);
+	-webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+figure a.button:hover {
+	cursor: pointer;
+	background-color: rgba(255,209,0,0.15);
+}
+
+a.button:hover {
+	cursor: pointer;
+}
+
+/* PANEL */
+	.panel {
+		width: 360px;
+		height: 380px;
+		border-radius: 2px;
+		background-color: white;
+		border: 1px solid rgba(0,0,0,0.1);
+		position: absolute;
+		top: 1958px;
+		margin-left: 58px;
+		-transition: 1s;
+		-webkit-transition: 1s;
+		display: none;
+	}
+
+	ul.panel-nav {
+		list-style-type: none;
+		padding: 10px 25px;
+		margin: 0;
+		text-indent: none;
+		font-size: 16px;
+		color: #98A097;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}		
+
+	ul.panel-nav li {
+		display: inline-block;
+		padding-right: 24px;
+	}
+
+	ul.panel-nav li.active {
+		color: #000;
+		-
+	}
+		.line-active {
+			width: 176px;
+			height: 2px;
+			background: #53BB8A;
+			margin-left: 146px;
+			margin-top: -2px;
+		}
+
+		ul.panel-nav li:hover {
+			color: #000;
+			-webkit-transition: 0.2s;
+		    transition: 0.2s; 
+		    cursor: pointer;
+		}
+
+	ul.resource-list {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0;
+		text-indent: none;
+		font-size: 16px;
+		/*color: #98A097;*/
+	}		
+
+		ul.resource-list li {
+			padding: 10px 15px 20px 15px;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			display: block;
+			-webkit-transition: 0.2s;
+		    transition: 0.2s; 
+		}
+
+		ul.resource-list li:hover {
+			background: rgba(0,0,0,0.04);
+			cursor: pointer;
+		}
+
+		.placeholder-resource {
+			width: 64px; height: 64px;
+			background: #C5CAD3;
+		}
+
+		.resource-title {
+			font-family: 'Lyon Text';
+			font-size: 16px;
+			margin-left: 78px;
+			margin-top: -60px;
+		}
+
+		.resource-url {
+			font-family: 'Neue Haas Unica Pro';
+			font-size: 12px;
+			color: #9B9B9B;
+			margin-left: 78px;
+			margin-top: -20px;
+		}
+
+
+	input[type="text"] {
+		width: 306px;
+		background-color: #FAFAFA;
+		border: 1px solid rgba(0,0,0,0.1);
+		border-radius: 2px;
+		box-shadow: none !important;
+		padding: 10px;
+		margin: 15px;
+		font-family: 'Neue Haas Unica Pro';
+		font-size: 16px;
+	}
+
+	input[type="text"]:focus {
+	  outline: none;
+	}
+
+
+
+/* NEXT MODULE */
+
+.next {
+	margin: 30px 0px 80px -10px;
+	background: rgba(0,0,0,0);
+	width: 645px;
+	border-radius: 2px;
+	padding: 3px 10px;
+	-webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.next:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.03);
+}
+
+
+
+/* TYPE */
+
+
+@font-face {
+    font-family:'Neue Haas Unica Pro';
+    src: url('fonts/Neue Haas Unica Pro Light.eot');
+	src: url('fonts/Neue Haas Unica Pro Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Neue Haas Unica Pro Light.woff2') format('woff2'),
+		url('fonts/Neue Haas Unica Pro Light.woff') format('woff'),
+		url('fonts/Neue Haas Unica Pro Light.svg#Neue Haas Unica Pro Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Neue Haas Unica Pro';
+    src: url('fonts/Neue Haas Unica Pro Bold.eot');
+	src: url('fonts/Neue Haas Unica Pro Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Neue Haas Unica Pro Bold.woff2') format('woff2'),
+		url('fonts/Neue Haas Unica Pro Bold.woff') format('woff'),
+		url('fonts/Neue Haas Unica Pro Bold.svg#Neue Haas Unica Pro Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Neue Haas Unica Pro';
+    src: url('fonts/Neue Haas Unica Pro.eot');
+	src: url('fonts/Neue Haas Unica Pro.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Neue Haas Unica Pro.woff2') format('woff2'),
+		url('fonts/Neue Haas Unica Pro.woff') format('woff'),
+		url('fonts/Neue Haas Unica Pro.svg#Neue Haas Unica Pro') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Lyon Text Regular';
+    src: url('fonts/LyonText-Regular.eot');
+	src: url('fonts/LyonText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LyonText-Regular.woff2') format('woff2'),
+		url('fonts/LyonText-Regular.woff') format('woff'),
+		url('fonts/LyonText-Regular.svg#LyonText-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Lyon Text Bold';
+    src: url('fonts/LyonText-Bold.eot');
+	src: url('fonts/LyonText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LyonText-Bold.woff2') format('woff2'),
+		url('fonts/LyonText-Bold.woff') format('woff'),
+		url('fonts/LyonText-Bold.svg#LyonText-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}

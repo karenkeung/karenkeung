@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>Sesame</title>
+	<meta property="og:title" content="Sesame"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://sesame.smvi.co/"/>
+	<meta property="og:image:url" content="http://sesame.smvi.co/assets/og-cover.png"/>
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:description" content="Sesame – description"/>
+
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/skeleton.css" />
+	<link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div id="nav" class="row">
+			<div class="two offset-by-two columns">
+				<a data-scroll href="#">Sesame</a>
+			</div>
+			<div class="four offset-by-four columns" id="nav-right">
+				<a data-scroll href="#studentinfo">See how it works</a>
+				<a href="documentation.html">Read the case study</a>
+			</div>
+		</div>
+
+		<div id="intro" class="row">
+			<div class="two columns">
+				<h1>Sesame</h1>
+			</div>
+			<div class="six columns">
+				<div class="rw-words rw-words-1">
+					<h1>
+						<span>is learning, re-imagined for the contemporary student.</span>
+						<span>is a free, browser-based open education ecosystem.</span>
+						<span>allows, and encourages sharing.</span>
+						<span>integrates with existing learning management systems.</span>
+					</h1>
+				</div>
+				<a href="#tour-theatre"><div class="button" id="play-tour">Take a tour <img src="assets/play-shape.png" width="16px" id="icon-play"></div></a>
+
+				
+               <div id="tour-theatre" class="modalDialog">
+                    <div>   
+                        <iframe src="https://player.vimeo.com/video/212677391??autoplay=0&color=ffffff&title=0&byline=0&portrait=0" width="1200" height="675" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <a href="#" title="Close" class="close"><h6>Close</h6></a>      
+                    </div>
+                </div>
+
+			</div>
+		</div>
+	</div>
+		
+	<div class="row actions u-full-width">
+		<a data-scroll href="#studentinfo"><div class="six columns navy">
+			<div class="container">
+				<h6>I'm a student</h6>
+				<h3>How do I learn with Sesame?</h3>
+			</div></a>
+		</div>
+		<a data-scroll href="documentation.html"><div class="six columns blush">
+			<div class="container">
+				<h6>I'm an educator</h6>
+				<h3>How can Sesame help my classroom?</h3>
+			</div>
+		</div></a>
+	</div>
+		
+<div class="container">
+	<div id="studentinfo" class="row">
+		<img src="assets/melange.png" width="94px" style="margin-bottom:20px;"><h2>Read anything, comfortably.</h2>
+		<div class="four offset-by-two columns">
+			<p style="text-align:left;">Sesame is a browser-based, flexible framework that makes content from any subject easy to access, read, and engage with, no matter what you study. Better yet, Sesame relies on student and author input to continually improve its reading experiences.</p>
+		</div>
+		<div class="four columns">
+			<p style="text-align:left;">Content-first design means a comfortable reading environment, including appropriate typographic rhythm, being small-screen friendly, and consideration for images, videos, figures and tables, and LaTeX integration.</p>
+		</div>
+		<div class="eight offset-by-two columns">
+		<h6>
+			<span id="title-study">I study</span>
+			<ul class="list_subjects">
+				<li>
+					<a href="#arthistory" class="active" onclick="highlight(this); document.getElementById('arthistory').play()">Art History</a>
+				</li>
+				<li>
+					<a href="#biology" onclick="highlight(this); document.getElementById('biology').play()">Biology</a>
+				</li>
+				<li>
+					<a href="#psych" onclick="highlight(this); document.getElementById('psych').play()">Psychology</a>
+				</li>
+				<li>
+					<a href="#econ" onclick="highlight(this); document.getElementById('econ').play()">Economics</a>
+				</li>
+			</ul>
+		</h6>	
+		</div>	
+
+		
+		<div id="screens_subjects">
+			<video src="assets/subjects-art-browser.mp4" width="1200px" id="arthistory" class="screens screens01" autoplay loop></video>
+			<video src="assets/subject-bio.mp4" width="1200px" id="biology" class="screens screens02" loop></video>
+			<video src="assets/psych-fixed.mp4" width="1200px" id="psych" class= "screens screens03" loop></video>
+			<video src="assets/subject-econ.mp4" width="1200px" id="econ" class= "screens screens04" loop></video>
+		</div>
+	</div>	
+</div> <!-- end container 2 -->
+
+	<div id="features-extra">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns" style="text-align:center;">
+					<h2>Intuitive features for the contemporary student.</h2>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="four columns">
+					<img src="assets/share.png">
+					<h3>Take notes <em>and</em> read notes.</h3>
+					<p>Sesame has both public and private annotation modes built in, so you can keep your notes to yourself and export them, or turn them into conversations with peers just as easily.</p>
+				</div>
+
+				<div class="four columns">
+					<img src="assets/engage.png">
+					<h3>Discussions where they belong.</h3>
+					<p>Participate in conversations in-line to the material you're reading, where and when they’re actually relevant. Plus, share resources that you find with your peers right where they make sense.</p>
+				</div>
+
+				<div class="four columns">
+					<img src="assets/empower.png">
+					<h3>You’re more than a student.</h3>
+					<p>Sesame Classrooms are powered by the <a data-scroll href="#">Commons</a>, a centralized, open-source hub for learning built on the principles of peer production. Everyone’s an expert at something—even as a student, you can mentor or moderate Commons!</p>
+				</div>
+		</div>
+	</div>
+	</div>
+
+<div class="container">
+	<div id="feature-search" class="row">
+		<div class="eight offset-by-two columns">
+			<img src="assets/brain.png" width="94px" style="margin-bottom:20px;">
+			<h2>Sesame’s dynamic search system is powered by you.</h2>
+			<p class="eight offset-by-two columns">Control+F in Sesame goes beyond highlighting what’s on the page—your search results use machine learning to understand actual learning patterns.</p>
+		</div>
+			<h6>
+				<ul class="list_subjects">
+					<li id="definition">Definitions</li>
+					<li id="entity">Entities</li>
+					<li id="popular">Popular searches</li>
+					<li id="context">Contextual search</li>
+					<li id="related">Related topics, discussions, and resources</li>
+				</ul>
+			</h6>
+
+		<div id="search_screens">
+			<img src="assets/search01.png" width="30%" class="x-def x-ent x-cxt x-rel">
+			<img src="assets/search02.png" width="30%" class="x-def x-pop x-cxt x-rel">
+			<img src="assets/search03.png" width="30%" class="x-def x-ent x-pop x-rel">
+			<img src="assets/search04.png" width="30%" id="search04" class="x-ent x-pop x-cxt x-rel">
+			<img src="assets/search05.png" width="30%" id="search05" class="x-def x-ent x-pop x-rel">
+			<img src="assets/search06.png" width="30%" id="search06" class="x-def x-ent x-pop x-cxt">
+			<img src="assets/search07.png" width="30%" id="search07" class="x-def x-ent x-pop x-cxt">
+			<img src="assets/search08.png" width="30%" id="search08" class="x-def x-ent x-pop x-cxt">
+			<img src="assets/search09.png" width="30%" id="search09" class="x-def x-ent x-pop x-rel">
+		</div> 
+	</div>
+</div>
+
+	<div class="row actions u-full-width">
+		<a data-scroll href="documentation.html"><div class="six columns sage">
+			<div class="container">
+				<h6>I want to free learning</h6>
+				<h3>Sign your school up for Sesame</h3>
+			</div></a>
+		</div>
+		<a data-scroll href="documentation.html"><div class="six columns tangerine">
+			<div class="container">
+				<h6>I want to learn more</h6>
+				<h3>Read the case study</h3>
+			</div>
+		</div></a>
+	</div>
+
+
+</body>
+
+<script>
+    function highlight(elem) {
+        var a = document.getElementsByTagName('a')
+        for (i = 0; i < a.length; i++) {
+            a[i].classList.remove('active')
+        }
+        elem.classList.add('active');
+    }
+</script>
+
+<script>
+	smoothScroll.init();
+</script>
+
+<script>
+    $(document).ready(function() {   
+	    //Section 2
+	    $('li#definition').hover(function(){     
+	        $('.x-def').addClass('faded');    },     
+	    function(){    
+	        $('.x-def').removeClass('faded'); });
+
+	    $('li#entity').hover(function(){     
+	        $('.x-ent').addClass('faded');    },     
+	    function(){    
+	        $('.x-ent').removeClass('faded'); });
+	    
+	    $('li#popular').hover(function(){            
+	        $('.x-pop').addClass('faded');    },     
+	    function(){    
+	        $('.x-pop').removeClass('faded'); });
+
+	    $('li#context').hover(function(){            
+	        $('.x-cxt').addClass('faded');    },     
+	    function(){    
+	        $('.x-cxt').removeClass('faded'); });
+
+	    $('li#related').hover(function(){            
+	        $('.x-rel').addClass('faded');    },     
+	    function(){    
+	        $('.x-rel').removeClass('faded'); });
+	});
+
+</script>
+
+
+
+</html>

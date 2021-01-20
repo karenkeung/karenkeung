@@ -1,0 +1,401 @@
+body {
+	background-color: #FAFAFA;
+	color: #35363C;
+	font-family: 'Vaud', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+}
+
+	::selection {
+	  background: #E0DFDE; /* WebKit/Blink Browsers */
+	}
+	::-moz-selection {
+	  background: #E0DFDE; /* Gecko Browsers */
+	}
+
+nav {
+	position: fixed;
+	width: 210px;
+	height: 100vh;
+	top: 0;
+	background: #EFEEEC;
+	padding: 20px 40px 0px 50px;
+}
+
+nav ul {
+	font-weight: 500;
+	line-height: 1;
+	list-style-type: none;
+	margin-top: 50px;
+	margin-right: -10px;
+}
+
+	.num {
+		font-size: 12px;
+		font-weight: 600;
+	}	
+
+	.sub {
+		font-size: 13px;
+		color: #8B8C8E;
+		padding-left: 40px;
+	}
+
+	nav li:hover {
+		color: #FF6A50;
+		cursor: pointer;
+	}
+
+	#contents {
+	}
+
+.active {
+	color: #FF6A50;
+	/*font-weight: 600;*/
+}
+
+section {
+	margin-top: 60px;
+	max-width: 760px;
+}
+
+.aside {
+	background: rgba(204,214, 209, 0.3);
+	border-radius: 2px;
+	padding: 20px 20px 2px 20px;
+	color: #5C6E65;
+	margin: 40px auto;
+	width: 75%;
+}
+
+#main-body {
+	position: absolute;
+	left: 260px;
+}
+
+#introduction {
+	margin-top: 260px;
+}
+
+#main-body a {
+	/*padding-bottom: -1px;*/
+	border-bottom: 1px solid #C8C6C4;
+}
+
+#main-body a:hover {
+	color: #C8C6C4;
+}
+
+#attribution {
+	position: absolute;
+	bottom: 40px;  
+    opacity: 0.2;
+}
+
+ul.list {
+	list-style-type: disc;
+	list-style-position: inside;
+	text-indent: -2.6rem;
+	padding-left: 3rem;
+	font-family: 'Vaud', sans-serif;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-top: 20px;
+}
+
+img {
+	border-radius: 2px;
+	margin: 30px 0px 0px 0px;
+}
+
+	img.inline {
+		display: inline-block;
+		margin-right: 40px;
+	}
+
+	.border {
+		border: 1px solid rgba(0,0,0,0.08);
+	}
+
+	.shadow {
+		-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 	0px 0px 8px 0px rgba(0,0,0,0.1);
+		box-shadow: 		0px 0px 8px 0px rgba(0,0,0,0.1);	
+	}
+
+	video {
+		margin-top: 30px;
+	}
+
+#nav, #nav-right, #nav-contents {
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	font-weight: 600;
+	font-size: 1.1rem;
+	margin: 20px 0px;
+	text-align: left;
+	z-index:100;
+}
+
+	#nav {
+		position: absolute;
+		left: 260px;
+	}
+
+	#nav-right {
+		position: absolute;
+		right: 0px;
+		float: right;
+		text-align: right;
+	}
+
+	a#nav-right:hover, a#nav:hover {
+		color: #FF6A50;
+	}
+
+/* TYPE */
+
+h1 {
+	font-family: 'Lyon Display', serif;
+	font-weight: 500;
+	letter-spacing: 0px;
+	line-height: 1;
+}
+
+h2 {
+	font-family: 'Lyon Display', serif;
+	font-weight: 500;
+	letter-spacing: 0px;
+}
+
+h3 {
+	font-family: 'Vaud Display', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 0px;
+	margin-top: 36px;
+	margin-bottom: 12px;
+}
+
+h4  {
+	font-family: 'Lyon Text', serif;
+	font-weight: 600;
+	/*color:#6B7E74;*/
+	text-indent: 3em;
+	margin-top: 20px;
+	margin-bottom: 3px;
+	font-size: 19px;
+	letter-spacing: 0.1px;
+}
+
+h5 {
+	font-family: 'Lyon Text', serif;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0px;
+	margin-top: -15px;
+	margin-bottom: 6px;
+}
+
+h6 {
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	-moz-transition: 0.1s ease-in;
+	-webkit-transition: 0.1s ease-in;
+	-transition: 0.1s ease-in;
+}
+	a:hover {color:inherit;}
+
+	#nav a:hover {
+		color: #FF6A50;
+	}
+
+	a.fig {
+		color: #6B7E74;
+		border-bottom: 0px !important;
+	}
+
+p {
+	font-family: 'Lyon Text', serif;
+	font-size: 19px;
+	line-height: 1.6;
+	margin-bottom:12px;
+}
+
+	blockquote {
+		font-family: 'Lyon Text', serif;
+		font-size: 19px;
+		border-left: 3px solid #eee;
+		padding-left: 20px;
+		margin-bottom: 0px;
+	}
+
+	.smallcaps {
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	.figure {
+		font-family: 'Vaud';
+		font-weight: 600;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+		color:#6B7E74;
+	}
+
+
+.caption {
+	font-family: 'Vaud', sans-serif;
+	max-width: 670px;
+	font-size: 13px;
+	line-height: 1.4;
+	font-weight: 500;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	opacity: 0.8;
+}
+
+
+
+
+
+
+/* SCREEN-FRIENDLINESS */
+
+	@media (max-width: 900px) {
+		nav {
+			display: none;
+		}
+
+		section {
+			margin-top: 60px;
+			width: 100%;
+			/*max-width: 760px;*/
+		}
+		.container {
+			width: 90%;
+		}
+		#main-body {
+			position: absolute;
+			left: 0px;
+			width: 100%;
+			}
+
+		#nav {
+			position: absolute;
+			left: 0px;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		h4 {
+			text-indent: 0px;
+		}
+
+	}
+
+
+
+/* FONTS */
+
+	@font-face {
+	    font-family:'Lyon Display';
+	    src: url('../fonts/LyonDisplay-Medium.eot');
+		src: url('../fonts/LyonDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/LyonDisplay-Medium.woff2') format('woff2'),
+			url('../fonts/LyonDisplay-Medium.woff') format('woff'),
+			url('../fonts/LyonDisplay-Medium.svg#LyonDisplay-Medium') format('svg');
+	    font-weight: 500;
+	    font-style: normal;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
+
+	@font-face {
+	    font-family:'Lyon Display';
+	    src: url('../fonts/LyonDisplay-MediumItalic.eot');
+		src: url('../fonts/LyonDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/LyonDisplay-MediumItalic.woff2') format('woff2'),
+			url('../fonts/LyonDisplay-MediumItalic.woff') format('woff'),
+			url('../fonts/LyonDisplay-MediumItalic.svg#LyonDisplay-MediumItalic') format('svg');
+	    font-weight: 500;
+	    font-style: italic;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
+
+	@font-face {
+	    font-family:'Lyon Text';
+	    src: url('../fonts/LyonText-Regular.eot');
+		src: url('../fonts/LyonText-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/LyonText-Regular.woff2') format('woff2'),
+			url('../fonts/LyonText-Regular.woff') format('woff'),
+			url('../fonts/LyonText-Regular.svg#LyonText-Regular') format('svg');
+	    font-weight: 400;
+	    font-style: normal;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
+
+	@font-face {
+	    font-family:'Lyon Text';
+	    src: url('../fonts/LyonText-RegularItalic.eot');
+		src: url('../fonts/LyonText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/LyonText-RegularItalic.woff2') format('woff2'),
+			url('../fonts/LyonText-RegularItalic.woff') format('woff'),
+			url('../fonts/LyonText-RegularItalic.svg#LyonText-RegularItalic') format('svg');
+	    font-weight: 400;
+	    font-style: italic;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
+
+	@font-face {
+	    font-family:'Lyon Text';
+	    src: url('../fonts/LyonText-Bold.eot');
+		src: url('../fonts/LyonText-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/LyonText-Bold.woff2') format('woff2'),
+			url('../fonts/LyonText-Bold.woff') format('woff'),
+			url('../fonts/LyonText-Bold.svg#LyonText-Bold') format('svg');
+	    font-weight: 700;
+	    font-style: normal;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
+
+	@font-face {
+	    font-family:'Vaud';
+	    src: url('../fonts/Vaud Medium.eot');
+		src: url('../fonts/ Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Vaud Medium.woff2') format('woff2'),
+			url('../fonts/Vaud Medium.woff') format('woff'),
+			url('../fonts/Vaud Medium.svg#Vaud Medium') format('svg');
+	    font-weight: 600;
+	    font-style: normal;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
+
+	@font-face {
+	    font-family:'Vaud';
+	    src: url('../fonts/Vaud SemiBold.eot');
+		src: url('../fonts/Vaud SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Vaud SemiBold.woff2') format('woff2'),
+			url('../fonts/Vaud SemiBold.woff') format('woff'),
+			url('../fonts/Vaud SemiBold.svg#Vaud SemiBold') format('svg');
+	    font-weight: 700;
+	    font-style: normal;
+	    font-stretch: normal;
+	    unicode-range: U+0020-00FE;
+	}
