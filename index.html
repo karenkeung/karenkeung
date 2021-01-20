@@ -15,7 +15,6 @@
 	<meta property="omg:image:height" content="630">
 	<meta property="og:description" content="Designer at Facebook. Graduate of the York/Sheridan Program in Design." />
 
-	<link rel="shortcut icon" type="image/ico" href="favicon.png"/>
 	<link rel="stylesheet" href="css/style.css" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -56,16 +55,16 @@
         document.getElementById("fade").className = "day";
 	}
 
-	else if ((17 <= currentTime && currentTime < 21)||(5 <= currentTime && currentTime < 8)) {
+	else if ((17 <= currentTime && currentTime < 23)||(5 <= currentTime && currentTime < 8)) {
 		document.body.style.backgroundColor="#F2F3F6";
         document.body.style.color = "#595C69";
-        document.getElementById("fade").className = "dusk";
+        // document.getElementById("fade").className = "dusk";
 	}
 
 	else {
-		document.body.style.backgroundColor="#252922";
-        document.body.style.color = "#ECE9EE";
-        document.getElementById("fade").className = "night";
+		document.body.style.backgroundColor="#212E24";
+        document.body.style.color = "#ECD5B5";
+        // document.getElementById("fade").className = "night";
 	}
 </script>
 
@@ -77,5 +76,4 @@
 
   ga('create', 'UA-50110826-1', 'auto');
   ga('send', 'pageview');
-
 </script>
