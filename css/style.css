@@ -27,9 +27,7 @@ body {
 }
 
 .main {
-	/*width: 100%;*/
 	width: 600px;
-	/*float: left;*/
 }
 
 .indent {
@@ -38,9 +36,9 @@ body {
 
 a {
 	color: inherit;
-	text-decoration: none;
+	text-decoration: underline;
 	/*border-bottom: 1px dashed;*/
-	/*border-bottom-style: dashed;*/
+	/*border-bottom-style: dotted;*/
 	cursor: ne-resize;
  	transition: ease-out 0.2s;
  	-webkit-transition: ease-out 0.2s;
@@ -142,7 +140,7 @@ a:hover {
 	#wrap {
 		width: 92%;
 		margin-top: 10px;
-		padding-left: 12%;
+		padding-left: 0px;
 	}
 
    	.main {
@@ -155,6 +153,10 @@ a:hover {
 
 	body {
 		font-size: 1.2rem;
+	}
+
+	.indent {
+		text-indent: 40px;
 	}
 }
 
