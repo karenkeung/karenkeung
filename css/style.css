@@ -147,22 +147,18 @@ a.right-arrow {cursor: ne-resize;}
 		/*float: left;*/
 	}
 
-}/*
+}
+
+
 
 @media screen and (max-width: 720px) {
 
-	#about .leftcol {
-		width: 92%;
-	}
-
-	#fade {
-		height: 2%;
-	}
-
-	h2 {
-		padding-top: 32px;
+	#about {
+		font-size: 1.48rem;
 	}
 }
+
+/*
 
 @media screen and (max-width: 480px) {
 	#wrap {
@@ -174,47 +170,11 @@ a.right-arrow {cursor: ne-resize;}
 		height: 2%;
 	}
 }
+
 */
+
+
 /* letters */
-/* @font-face {
-    font-family:'Canela Web Thin';
-    src: url('../fonts/Canela Web Thin Regular.eot');
-	src: url('../fonts/Canela Web Thin Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Canela Web Thin Regular.woff2') format('woff2'),
-		url('../fonts/Canela Web Thin Regular.woff') format('woff'),
-		url('../fonts/Canela Web Thin Regular.svg#Canela Web Thin Regular') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-201D;
-} */
-
-/* @font-face {
-    font-family:'Fakt Pro';
-    src: url('../fonts/FaktPro-Normal.eot');
-	src: url('../fonts/FaktPro-Normal.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/FaktPro-Normal.woff2') format('woff2'),
-		url('../fonts/FaktPro-Normal.woff') format('woff'),
-		url('../fonts/FaktPro-Normal.svg#FaktPro-Normal') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-201D;
-}
-
-@font-face {
-    font-family:'Fakt Pro';
-    src: url('../fonts/FaktPro-Light.eot');
-	src: url('../fonts/FaktPro-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/FaktPro-Light.woff2') format('woff2'),
-		url('../fonts/FaktPro-Light.woff') format('woff'),
-		url('../fonts/FaktPro-Light.svg#FaktPro-Blond') format('svg');
-    font-weight: 200;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-201D;
-} */
-
 
 @font-face {
     font-family: 'Untitled Sans';
